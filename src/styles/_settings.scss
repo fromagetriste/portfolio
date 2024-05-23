@@ -1,0 +1,39 @@
+$color-react: rgb(0, 216, 255);
+$black: #000000;
+$blue:#0064D7;
+$white: #ECEDEE;
+$grey: #A1A1AA;
+$punchy-pink:#FF4ECD;
+$purple-background: #2C0F47;
+
+@font-face {
+  font-family: "Comfortaa-Regular";
+  src: url(../assets/fonts/Comfortaa-Regular.ttf);
+}
+@font-face {
+  font-family: "Comfortaa-Bold";
+  src: url(../assets/fonts/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Courgette-Regular";
+  src: url(../assets/fonts/Courgette-Regular.ttf);
+}
+
+$font-1: "Comfortaa-Regular", sans-serif;
+$font-2: "Comfortaa-Bold", sans-serif;
+$font-3: "Courgette-Regular", verdana;
+
+// bien définir les propriétés en haut de page
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; // pour retirer les margins et paddings autour des block elements
+  color: $white;
+  font-family: $font-1;
+}
+
+ul {
+  list-style-type: none;
+}
