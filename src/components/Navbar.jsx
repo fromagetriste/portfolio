@@ -32,7 +32,7 @@ const Navbar = () => {
               target="_blank"
             >
               <img
-                src="/linkedin.svg"
+                src="/backgrounds-and-icons/linkedin.svg"
                 alt="logo-Linkedin"
                 className="nav-logo"
                 id="saturate-img"
@@ -42,7 +42,7 @@ const Navbar = () => {
           <li>
             <a href="https://github.com/fromagetriste" target="_blank">
               <img
-                src="/github-mark-white.svg"
+                src="/backgrounds-and-icons/github-mark-white.svg"
                 alt="logo-github"
                 className="nav-logo"
               ></img>
