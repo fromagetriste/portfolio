@@ -3,16 +3,27 @@ $black: #000000;
 $blue: #0064d7;
 $white: #ecedee;
 $grey: #a1a1aa;
+$grey-background: #19191C;
 $punchy-pink: #ff4ecd;
 $purple-background: #2c0f47;
 
+@mixin pink-gradient-properties {
+  background: linear-gradient(0deg, #b249f8 0%, #ff1cf7 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 @font-face {
-  font-family: "Comfortaa-Regular";
-  src: url(../assets/fonts/Comfortaa-Regular.ttf);
+  font-family: "OpenSans-Regular";
+  src: url(../assets/fonts/OpenSans-Regular.ttf);
 }
 @font-face {
-  font-family: "Comfortaa-Bold";
-  src: url(../assets/fonts/Comfortaa-Bold.ttf);
+  font-family: "OpenSans-ExtraBold";
+  src: url(../assets/fonts/OpenSans-ExtraBold.ttf);
 }
 
 @font-face {
@@ -25,16 +36,10 @@ $purple-background: #2c0f47;
   src: url(../assets/fonts/SpaceMono-Bold.ttf);
 }
 
-@font-face {
-  font-family: "Roboto-Black";
-  src: url(../assets/fonts/Roboto-Black.ttf);
-}
-
-$font-1: "Comfortaa-Regular", "Segoe UI", Tahoma;
-$font-2: "Comfortaa-Bold", "Segoe UI", Tahoma;
+$font-1: "OpenSans-Regular", "Segoe UI", Tahoma;
+$font-2: "OpenSans-ExtraBold", "Segoe UI", Tahoma;
 $SpaceMono-Regular: "SpaceMono-Regular", monospace;
 $SpaceMono-Bold: "SpaceMono-Bold", monospace;
-$Roboto-Black: "Roboto-Black", Arial, Helvetica, sans-serif;
 
 // bien définir les propriétés en haut de page
 

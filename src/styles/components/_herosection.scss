@@ -3,28 +3,70 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 10rem;
-}
-.card__container {
-  border: 1px red solid;
-  font-family: $Roboto-Black;
-  font-size: 3rem;
-  & #text-gradient {
-    background: linear-gradient(0deg, #b43ee3 0%, #ed24f8 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    font-family: $Roboto-Black;
-  }
-}
-.terminal__container {
-  border: 1px blue solid;
+  gap: 2rem;
 
-  background: linear-gradient(90deg, rgb(28, 10, 46) 46%, rgb(37, 16, 51) 100%);
-  & p {
-    font-family: $SpaceMono-Regular;
+  & .card__container {
+    & h1 {
+      font-family: $font-2;
+      line-height: 120%;
+      font-weight: 1200;
+      font-size: 3rem;
+      & #text-gradient {
+        @include pink-gradient-properties;
+        font-family: $font-2;
+      }
+    }
+    & .title-mini {
+      color: $grey;
+      #pink {
+        @include pink-gradient-properties;
+      }
+      font-size: 1.25rem;
+      margin-top: 2rem;
+    }
+    & .button__container {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      margin-top: 3rem;
+      gap: 3rem;
+      & .resume-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $blue;
+      }
+      & button {
+        padding: 10px 2rem;
+        border-radius: 20px;
+        font-family: $font-1;
+        font-size: 1.1rem;
+        border: none;
+        cursor: pointer;
+
+        & #download-icon {
+          max-height: 1.2rem;
+          padding-left: 0.5rem;
+        }
+      }
+
+      .contact-me-button {
+        background-color: $grey-background;
+      }
+    }
+  }
+  // the terminal container starts here
+  & .terminal__container {
+    min-width: 35vw;
+    padding: 3rem;
+    border: 1px blue solid;
+    background: linear-gradient(
+      90deg,
+      rgb(28, 10, 46) 46%,
+      rgb(37, 16, 51) 100%
+    );
+    & p {
+      font-family: $SpaceMono-Regular;
+    }
   }
 }
