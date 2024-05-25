@@ -17,7 +17,7 @@ const HeroSection = () => {
           <button className="resume-button">
             <div>Get my Resume</div>
             <img
-              src="../../public/backgrounds-and-icons/download-icon-2.svg"
+              src="/backgrounds-and-icons/download-icon-2.svg"
               alt="logo-download"
               id="download-icon"
             ></img>

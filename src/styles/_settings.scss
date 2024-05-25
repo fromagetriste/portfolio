@@ -3,7 +3,7 @@ $black: #000000;
 $blue: #0064d7;
 $white: #ecedee;
 $grey: #a1a1aa;
-$grey-background: #19191C;
+$grey-background: #19191c;
 $punchy-pink: #ff4ecd;
 $purple-background: #2c0f47;
 
@@ -18,12 +18,12 @@ $purple-background: #2c0f47;
 }
 
 @font-face {
-  font-family: "OpenSans-Regular";
-  src: url(../assets/fonts/OpenSans-Regular.ttf);
+  font-family: "Inter-Regular";
+  src: url(../assets/fonts/Inter-Regular.ttf);
 }
 @font-face {
-  font-family: "OpenSans-ExtraBold";
-  src: url(../assets/fonts/OpenSans-ExtraBold.ttf);
+  font-family: "Inter-Black";
+  src: url(../assets/fonts/Inter-Black.ttf);
 }
 
 @font-face {
