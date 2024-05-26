@@ -61,6 +61,8 @@
   // the terminal container starts here
 
   & .terminal__container {
+    color: gray;
+    font-family: $font-3;
     border: 1px rgba(128, 128, 128, 0.4) solid;
     border-radius: 5px;
     min-width: 40vw;
@@ -76,7 +78,8 @@
     & .code-text__container {
       padding: 1rem;
       & p {
-        font-family: $font-3;
+        font-family: monospace;
+        font-size: 1.05rem;
         overflow: auto;
         white-space: nowrap;
       }
@@ -85,20 +88,41 @@
 }
 
 .my-purple {
-  color: purple;
+  color: #c678dd;
 }
 .my-red {
-  color: red;
+  color: #e06c75;
 }
 .my-blue {
-  color: blue;
+  color: #61afef;
 }
 .my-green {
-  color: green;
+  color: #98c379;
 }
 .my-orange {
-  color: orange;
+  color: #d19a66;
 }
 .my-grey {
-  color: grey;
+  color: #abb2bf;
+}
+.terminal-background{
+  background-color: #282C34;
+}
+.padding-1 {
+  padding-left: 1rem;
+}
+.padding-2 {
+  padding-left: 2rem;
+}
+.padding-3 {
+  padding-left: 3rem;
+}
+.padding-4 {
+  padding-left: 4rem;
+}
+.padding-5 {
+  padding-left: 5rem;
+}
+.padding-6 {
+  padding-left: 6rem;
 }

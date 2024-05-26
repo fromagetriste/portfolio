@@ -27,13 +27,13 @@ $purple-background: #2c0f47;
 }
 
 @font-face {
-  font-family: "FiraCode-Light";
-  src: url(../assets/fonts/FiraCode-Light.ttf);
+  font-family: "ChivoMono-Regular";
+  src: url(../assets/fonts/ChivoMono-Regular.ttf);
 }
 
 $font-1: "Inter-Regular", "Segoe UI", Tahoma;
 $font-2: "Inter-Black", "Segoe UI", Tahoma;
-$font-3: "FiraCode-Light", monospace;
+$font-3: "ChivoMono-Regular", monospace;
 
 // bien définir les propriétés en haut de page
 
@@ -42,7 +42,7 @@ $font-3: "FiraCode-Light", monospace;
   padding: 0;
   box-sizing: border-box; // pour retirer les margins et paddings autour des block elements
   color: $white;
-  font-family: $font-1;
+  //font-family: $font-1;
 }
 
 ul {
