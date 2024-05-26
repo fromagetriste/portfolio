@@ -28,6 +28,11 @@ const HeroSection = () => {
 
       {/* Right-container (terminal) starts here */}
       <div className="terminal__container">
+        <div className="upper-part__container">
+          <li> a </li>
+          <li> b </li>
+          <li> c </li>
+        </div>
         <p>
           const Damien =
           <br />

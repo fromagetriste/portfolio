@@ -17,7 +17,7 @@ li {
 }
 
 .nav-logo {
-  max-height: 2rem;
+  height: 2rem;
 }
 
 .nav-left__container {
@@ -31,10 +31,10 @@ li {
   gap: 1rem;
   align-items: center;
   a {
-    transition: ease 0.3s;
+    transition: 0.2s;
   }
   a:hover {
-    transition: ease 0.3s;
+    transition: 0.2s;
     filter: brightness(0.5) saturate(0%);
   }
 }

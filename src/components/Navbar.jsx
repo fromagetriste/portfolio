@@ -8,9 +8,9 @@ const Navbar = () => {
               src="/backgrounds-and-icons/react-favicon.svg"
               alt="logo-react"
               className="nav-logo"
+              id="saturate-img"
             ></img>
           </li>
-          <li>React JS</li>
         </ul>
 
         <ul className="nav-right__container">
