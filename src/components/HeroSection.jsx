@@ -48,86 +48,84 @@ const HeroSection = () => {
         </div>
         <div className="code-text__container">
           {/* to have a text being not interpreted by JSX, set this around : {"your text"} */}
-          <p>
-            <span className="my-purple">import</span>{" "}
-            <span className="my-red">React</span>
-            <span className="my-grey">,</span>{" "}
-            <span className="my-orange">{"{"}</span>{" "}
-            <span className="my-red">{" useState "}</span>{" "}
-            <span className="my-orange">{"}"}</span>{" "}
-            <span className="my-purple">from</span>{" "}
-            <span className="my-green">
-              {"'"}react{"'"}
-            </span>
-            <span className="my-grey">;</span> <br />
-            <br />
-            <span className="my-purple">const</span>{" "}
-            <span className="my-blue">Developer = </span>
-            <span className="my-orange">()</span>{" "}
-            <span className="my-purple">={"> "}</span>
-            <span className="my-orange">{"{"}</span>
-            <br />
-            <span className="my-purple">[</span>
-            <span className="my-red">portfolio</span>
-            <span className="my-grey">,</span>{" "}
-            <span className="my-red">setPortfolio</span>
-            <span className="my-purple">]</span>{" "}
-            <span className="my-blue">= useState</span>
-            <span className="my-purple">(</span>
-            <span className="my-orange">true</span>
-            <span className="my-purple">)</span>
-            <span className="my-grey">;</span>
-            <br />
-            <br />
-            <span className="my-purple padding-1">return {"("}</span>
-            <br />
-            <span className="my-grey padding-2">{"<"}</span>
-            <span className="my-red">main</span>
-            <span className="my-grey">{">"} </span>
-            <br />
-            <span className="my-grey padding-3">{"<"}</span>
-            <span className="my-red">h1</span>
-            <span className="my-grey">{">"}</span>
-            <br />
-            <span className="my-grey padding-4">
-              Hello, My name is Damien, I am a self-taught front-end Developer.{" "}
-            </span>
-            <br />
-            <span className="my-grey padding-3">{"</"}</span>
-            <span className="my-red">h1</span>
-            <span className="my-grey">{">"}</span> <br />
-            <span className="my-grey padding-3">{"<"}</span>
-            <span className="my-red">p</span>
-            <span className="my-grey">{">"}</span> <br />
-            <span className="my-grey padding-4">
-              I am driven by beautiful, robust and user friendly interfaces.
-            </span>{" "}
-            <br />
-            <span className="my-grey padding-3">{"</"}</span>
-            <span className="my-red">p</span>
-            <span className="my-grey">{">"}</span> <br />
-            <span className="my-grey padding-3">{"<"}</span>
-            <span className="my-red">div</span>
-            <span className="my-grey">{">"}</span> <br />
-            <span className="my-grey padding-4">{"<"}</span>
-            <span className="my-red">button</span>
-            <span className="my-grey">{">"}</span>
-            <span className="my-grey">Get my Resume{"</"}</span>
-            <span className="my-red">button</span>
-            <span className="my-grey">{">"}</span> <br />
-            <span className="my-grey padding-4">{"<"}</span>
-            <span className="my-red">button</span>
-            <span className="my-grey">{">"}</span>
-            <span className="my-grey">Contact me{"</"}</span>
-            <span className="my-red">button</span>
-            <span className="my-grey">{">"}</span> <br />
-            <span className="my-grey padding-3">{"</"}</span>
-            <span className="my-red">div</span>
-            <span>{">"}</span> <br />
-            <span className="my-grey padding-2">{"</"}</span>
-            <span className="my-red">main</span>
-            <span className="my-grey">{">"}</span> <br /> <br />
-          </p>
+          <span className="my-purple">import</span>{" "}
+          <span className="my-red">React</span>
+          <span className="my-grey">,</span>{" "}
+          <span className="my-orange">{"{"}</span>{" "}
+          <span className="my-red">{" useState "}</span>{" "}
+          <span className="my-orange">{"}"}</span>{" "}
+          <span className="my-purple">from</span>{" "}
+          <span className="my-green">
+            {"'"}react{"'"}
+          </span>
+          <span className="my-grey">;</span> <br />
+          <br />
+          <span className="my-purple">const</span>{" "}
+          <span className="my-blue">Developer = </span>
+          <span className="my-orange">()</span>{" "}
+          <span className="my-purple">={"> "}</span>
+          <span className="my-orange">{"{"}</span>
+          <br />
+          <span className="my-purple">[</span>
+          <span className="my-red">portfolio</span>
+          <span className="my-grey">,</span>{" "}
+          <span className="my-red">setPortfolio</span>
+          <span className="my-purple">]</span>{" "}
+          <span className="my-blue">= useState</span>
+          <span className="my-purple">(</span>
+          <span className="my-orange">true</span>
+          <span className="my-purple">)</span>
+          <span className="my-grey">;</span>
+          <br />
+          <br />
+          <span className="my-purple padding-1">return {"("}</span>
+          <br />
+          <span className="my-grey padding-2">{"<"}</span>
+          <span className="my-red">main</span>
+          <span className="my-grey">{">"} </span>
+          <br />
+          <span className="my-grey padding-3">{"<"}</span>
+          <span className="my-red">h1</span>
+          <span className="my-grey">{">"}</span>
+          <br />
+          <span className="my-grey padding-4">
+            Hello, My name is Damien, I am a self-taught front-end Developer.{" "}
+          </span>
+          <br />
+          <span className="my-grey padding-3">{"</"}</span>
+          <span className="my-red">h1</span>
+          <span className="my-grey">{">"}</span> <br />
+          <span className="my-grey padding-3">{"<"}</span>
+          <span className="my-red">p</span>
+          <span className="my-grey">{">"}</span> <br />
+          <span className="my-grey padding-4">
+            I am driven by beautiful, robust and user friendly interfaces.
+          </span>{" "}
+          <br />
+          <span className="my-grey padding-3">{"</"}</span>
+          <span className="my-red">p</span>
+          <span className="my-grey">{">"}</span> <br />
+          <span className="my-grey padding-3">{"<"}</span>
+          <span className="my-red">div</span>
+          <span className="my-grey">{">"}</span> <br />
+          <span className="my-grey padding-4">{"<"}</span>
+          <span className="my-red">button</span>
+          <span className="my-grey">{">"}</span>
+          <span className="my-grey">Get my Resume{"</"}</span>
+          <span className="my-red">button</span>
+          <span className="my-grey">{">"}</span> <br />
+          <span className="my-grey padding-4">{"<"}</span>
+          <span className="my-red">button</span>
+          <span className="my-grey">{">"}</span>
+          <span className="my-grey">Contact me{"</"}</span>
+          <span className="my-red">button</span>
+          <span className="my-grey">{">"}</span> <br />
+          <span className="my-grey padding-3">{"</"}</span>
+          <span className="my-red">div</span>
+          <span>{">"}</span> <br />
+          <span className="my-grey padding-2">{"</"}</span>
+          <span className="my-red">main</span>
+          <span className="my-grey">{">"}</span> <br /> <br />
         </div>
       </div>
     </main>

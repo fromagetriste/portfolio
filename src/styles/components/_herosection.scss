@@ -1,11 +1,14 @@
 .hero__container {
   margin-top: 5rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
 
   & .card__container {
+    font-family: $font-1;
+
     & h1 {
       font-family: $font-2;
       line-height: 120%;
@@ -61,11 +64,9 @@
   // the terminal container starts here
 
   & .terminal__container {
-    color: gray;
-    font-family: $font-3;
     border: 1px rgba(128, 128, 128, 0.4) solid;
     border-radius: 5px;
-    min-width: 40vw;
+    max-width: 35vw;
     & .upper-part__container {
       display: flex;
       border-bottom: 1px rgba(128, 128, 128, 0.4) solid;
@@ -77,12 +78,10 @@
     }
     & .code-text__container {
       padding: 1rem;
-      & p {
-        font-family: monospace;
-        font-size: 1.05rem;
-        overflow: auto;
-        white-space: nowrap;
-      }
+      font-size: 1.05rem;
+      overflow: auto;
+      white-space: nowrap;
+      font-family: monospace;
     }
   }
 }
@@ -105,8 +104,8 @@
 .my-grey {
   color: #abb2bf;
 }
-.terminal-background{
-  background-color: #282C34;
+.terminal-background {
+  background-color: #282c3459;
 }
 .padding-1 {
   padding-left: 1rem;
@@ -125,4 +124,8 @@
 }
 .padding-6 {
   padding-left: 6rem;
+}
+
+.color{
+  color: #ff1cf783;
 }
