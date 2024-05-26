@@ -59,15 +59,14 @@
     }
   }
   // the terminal container starts here
+
   & .terminal__container {
-    border: 1px rgba(128, 128, 128, 0.708) solid;
+    border: 1px rgba(128, 128, 128, 0.4) solid;
     border-radius: 5px;
-    height: auto;
     min-width: 40vw;
-    min-height: 60vh;
     & .upper-part__container {
       display: flex;
-      border-bottom: 1px rgba(128, 128, 128, 0.708) solid;
+      border-bottom: 1px rgba(128, 128, 128, 0.4) solid;
       padding: 1rem;
       & #bullet-point {
         max-height: 0.7rem;
@@ -78,7 +77,28 @@
       padding: 1rem;
       & p {
         font-family: $font-3;
+        overflow: auto;
+        white-space: nowrap;
       }
     }
   }
+}
+
+.my-purple {
+  color: purple;
+}
+.my-red {
+  color: red;
+}
+.my-blue {
+  color: blue;
+}
+.my-green {
+  color: green;
+}
+.my-orange {
+  color: orange;
+}
+.my-grey {
+  color: grey;
 }
