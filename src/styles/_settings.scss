@@ -27,19 +27,13 @@ $purple-background: #2c0f47;
 }
 
 @font-face {
-  font-family: "SpaceMono-Regular";
-  src: url(../assets/fonts/SpaceMono-Regular.ttf);
-}
-
-@font-face {
-  font-family: "SpaceMono-Bold";
-  src: url(../assets/fonts/SpaceMono-Bold.ttf);
+  font-family: "FiraCode-Light";
+  src: url(../assets/fonts/FiraCode-Light.ttf);
 }
 
 $font-1: "Inter-Regular", "Segoe UI", Tahoma;
 $font-2: "Inter-Black", "Segoe UI", Tahoma;
-$SpaceMono-Regular: "SpaceMono-Regular", monospace;
-$SpaceMono-Bold: "SpaceMono-Bold", monospace;
+$font-3: "FiraCode-Light", monospace;
 
 // bien définir les propriétés en haut de page
 
