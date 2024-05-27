@@ -1,4 +1,5 @@
 nav {
+  position: relative;
   background: transparent;
   min-height: 10vh;
   font-family: $font-1;
@@ -42,4 +43,19 @@ li {
 
 #saturate-img {
   filter: brightness(20) saturate(0%);
+}
+
+#nav-shadow::before {
+  content: "";
+  position: absolute;
+  transform: translate(4rem, 0px) rotate(20deg);
+  width: 30rem;
+  height: 4rem;
+  background: radial-gradient(
+    100% 20% at 50% 50%,
+    $punchy-pink 100%,
+    $purple-background 60%
+  );
+  filter: blur(50px);
+  z-index: 1;
 }

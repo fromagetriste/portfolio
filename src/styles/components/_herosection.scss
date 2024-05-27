@@ -1,7 +1,9 @@
 .hero__container {
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin-top: 5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
@@ -64,6 +66,7 @@
   // the terminal container starts here
 
   & .terminal__container {
+    box-shadow: 6px 6px 18px -10px #d900ff;
     border: 1px rgba(128, 128, 128, 0.4) solid;
     border-radius: 5px;
     max-width: 35vw;
@@ -85,7 +88,7 @@
     }
   }
 }
-
+// setting colors for the terminal
 .my-purple {
   color: #c678dd;
 }
@@ -124,8 +127,4 @@
 }
 .padding-6 {
   padding-left: 6rem;
-}
-
-.color{
-  color: #ff1cf783;
 }

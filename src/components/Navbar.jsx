@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav>
+    <nav id="nav-shadow">
       <div className="nav__container">
         <ul className="nav-left__container">
           <li>
@@ -8,12 +8,15 @@ const Navbar = () => {
               src="/backgrounds-and-icons/react-favicon.svg"
               alt="logo-react"
               className="nav-logo"
-              id="saturate-img"
+              // id="saturate-img"
             ></img>
           </li>
         </ul>
 
         <ul className="nav-right__container">
+          <li>
+            <a href="#">About</a>
+          </li>
           <li>
             <a href="#">Stack</a>
           </li>

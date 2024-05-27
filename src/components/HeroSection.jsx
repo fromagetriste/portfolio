@@ -31,17 +31,17 @@ const HeroSection = () => {
       <div className="terminal__container terminal-background">
         <div className="upper-part__container">
           <img
-            src="/backgrounds-and-icons/bullet-point-terminal.svg"
+            src="/backgrounds-and-icons/bullet-point-terminal-blue.svg"
             alt="bullet point for style"
             id="bullet-point"
           ></img>
           <img
-            src="/backgrounds-and-icons/bullet-point-terminal.svg"
+            src="/backgrounds-and-icons/bullet-point-terminal-orange.svg"
             alt="bullet point for style"
             id="bullet-point"
           ></img>
           <img
-            src="/backgrounds-and-icons/bullet-point-terminal.svg"
+            src="/backgrounds-and-icons/bullet-point-terminal-green.svg"
             alt="bullet point for style"
             id="bullet-point"
           ></img>
