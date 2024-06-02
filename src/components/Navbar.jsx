@@ -15,19 +15,19 @@ const Navbar = () => {
 
         <ul className="nav-right__container">
           <li>
-            <a href="#">About</a>
+            <a href="#" className="nav_sections">About</a>
           </li>
           <li>
-            <a href="#">Stack</a>
+            <a href="#" className="nav_sections">Stack</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="#" className="nav_sections">Skills</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="#" className="nav_sections">Projects</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#" className="nav_sections">Contact</a>
           </li>
           <li>
             <a
