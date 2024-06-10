@@ -1,5 +1,5 @@
-import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
+import HeroSection from "./HeroSection";
+import Navbar from "./Navbar";
 
 function App() {
   return (
