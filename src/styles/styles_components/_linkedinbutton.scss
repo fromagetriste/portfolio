@@ -1,0 +1,13 @@
+a {
+  height: 1.75rem;
+  width: 1.75rem;
+  .logo-linkedin {
+    transition: 0.2s;
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+  :hover {
+    transition: 0.2s;
+    filter: brightness(0.5) saturate(0%);
+  }
+}

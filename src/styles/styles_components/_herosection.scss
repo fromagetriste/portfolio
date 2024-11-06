@@ -1,0 +1,160 @@
+.hero-container {
+  display: flex;
+  height: 80vh;
+  margin: 5rem 3rem 0 3rem;
+  gap: 10rem;
+}
+
+.terminal-container {
+  background-color: $terminal-background;
+  width: 30rem;
+  height: 18rem;
+  border: 1px $color-for-borders solid;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-family: monospace;
+  overflow: hidden;
+  .terminal-header {
+    height: 2rem;
+    border-bottom: 1px $color-for-borders solid;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding-left: 1rem;
+    .bullet {
+      height: 0.5rem;
+    }
+  }
+  .terminal-content {
+    padding-left: 1rem;
+  }
+}
+#profile-pic {
+  width: 9rem;
+}
+.card-container {
+  background-color: $card-background;
+  border-radius: 10px;
+  width: 25rem;
+  height: 25rem;
+  transition: all 1s ease;
+
+  .buttons-container {
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+}
+// COLORS FOR FAKE TERMINAL
+.italic {
+  font-style: italic;
+}
+.orange {
+  color: $orangish;
+}
+.grey {
+  color: $greyish;
+}
+.blue {
+  color: $blueish;
+}
+.purple {
+  color: $purplish;
+}
+.green {
+  color: $greenish;
+}
+.white {
+  color: $white;
+}
+.red {
+  color: $redish;
+}
+.p-1 {
+  padding-left: 1rem;
+}
+.p-2 {
+  padding-left: 2rem;
+}
+.p-3 {
+  padding-left: 3rem;
+}
+.p-4 {
+  padding-left: 4rem;
+}
+.p-5 {
+  padding-left: 5rem;
+}
+
+// classes to be added during animation
+
+.paddings {
+  padding: 1rem;
+}
+
+#flex-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  transition: all 1s ease;
+  width: 20rem;
+  height: 30rem;
+}
+
+p {
+  text-align: center;
+  transition: all 3s ease;
+  color: rgb(170, 170, 170);
+}
+
+.rounded-pic {
+  border-radius: 500px;
+  transition: all 2s ease;
+}
+
+.view-cv {
+  background-color: $grey-button;
+}
+.contact {
+  background-color: $purple;
+}
+
+.center-txt {
+  text-align: center;
+  transition: all 1s ease;
+}
+
+#card-btn {
+  display: block;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  height: 2rem;
+  transition-duration: 1s;
+}
+#card-btn:hover {
+  filter: brightness(1.2);
+  transition-duration: 0.2s;
+}
+
+.purple-txt {
+  color: $purplish;
+}
+// #contact-btn {
+//   display: block;
+//   width: 100%;
+//   margin: 1rem 0 1rem 0;
+//   cursor: pointer;
+//   border: none;
+//   border-radius: 5px;
+//   height: 2rem;
+//   transition-duration: 0.2s;
+// }
+// #contact-btn:hover {
+//   filter: brightness(1.2);
+//   transition-duration: 0.2s;
+// }

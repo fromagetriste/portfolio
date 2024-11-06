@@ -1,0 +1,44 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  height: 4rem;
+  background-color: transparent;
+  justify-content: space-between;
+  padding: 0 1rem;
+  .left-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo-dev {
+      height: 1.75rem;
+      margin-right: 0.5rem;
+      padding-left: 1rem;
+    }
+    .text {
+      white-space: nowrap;
+      font-family: $font-2;
+    }
+  }
+  .middle-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      margin: 0 1rem;
+    }
+  }
+  .right-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-right: 1rem;
+    .vertical-bar {
+      border: $white solid 1px;
+      width: 1px;
+      height: 1.5rem;
+    }
+  }
+}

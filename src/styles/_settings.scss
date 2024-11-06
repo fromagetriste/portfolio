@@ -1,0 +1,66 @@
+$white: rgb(243, 243, 243);
+$purple: #403976;
+$black: #000000;
+$blue: #0064d7;
+$grey: #a1a1aa;
+$main-background: #09000d;
+$punchy-pink: #ff4ecd;
+$purple-background: #2c0f47;
+$card-background: #1e293b9b;
+$color-for-borders: #2e3547;
+$grey-button: #323c49;
+$glassy: rgba(37, 34, 53, 0.445);
+
+// those colors are for code editor with Github theme
+$redish: #ff4141;
+$orangish: #e68026;
+$greyish: #afb3bb;
+$blueish: #5eb4fb;
+$purplish: #b468ff;
+$greenish: #89d887;
+$terminal-background: #0f172a96;
+// those colors are for code editor with Github theme
+
+@mixin pink-gradient-properties {
+  background: linear-gradient(0deg, #b249f8 0%, #ff1cf7 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(../assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter-Black";
+  src: url(../assets/fonts/Inter-Black.ttf);
+}
+
+$font-1: "Inter-Regular", "Segoe UI", Tahoma;
+$font-2: "Inter-Black", "Segoe UI", Tahoma;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $white;
+}
+
+body {
+  font-family: $font-1;
+  background-image: url("/public/icons/hero-background.svg");
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
