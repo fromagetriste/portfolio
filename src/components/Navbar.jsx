@@ -7,20 +7,16 @@ const Navbar = () => {
   return (
     <nav className="nav-container">
       <div className="left-group">
-        <img
-          className="logo-dev"
-          src="../../public/icons/web-icon.svg"
-          alt="dev-icon"
-        />
-        <div className="text">Damien Gravelle</div>
+        <img className="logo-dev" src="/icons/web-icon.svg" alt="dev-icon" />
+        <ul className="navigation-sections">
+          <li>Home</li>
+          <li>Stack</li>
+          <li>Demo</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
       </div>
-      <ul className="middle-group">
-        <li>Home</li>
-        <li>Stack</li>
-        <li>Demo</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
+
       <div className="right-group">
         <DarkModeButton isDarkMode={true} />
         <div className="vertical-bar"></div>

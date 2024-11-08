@@ -1,0 +1,25 @@
+.title-container {
+  text-align: center;
+  margin-top: 5rem;
+  opacity: 0;
+  transform: translateY(20px); /* Optional: adds a slight slide-up effect */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  .main-title {
+    font-family: $font-2;
+    line-height: 120%;
+    font-weight: 1200;
+    font-size: 3.5rem;
+  }
+  .second-title {
+    color: rgb(170, 170, 170);
+    margin-top: 1rem;
+  }
+}
+
+#React-JS {
+  color: $blue;
+}
+.title-container.fade-in {
+  opacity: 1;
+  transform: translateY(0); /* Reset position */
+}

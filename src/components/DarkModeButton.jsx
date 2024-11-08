@@ -6,13 +6,13 @@ const DarkModeButton = ({ isDarkMode }) => {
       {isDarkMode ? (
         <img
           className="logo-darkmode"
-          src="../../public/icons/night-icon.svg"
+          src="/icons/night-icon.svg"
           alt="night-icon"
         />
       ) : (
         <img
           className="logo-darkmode"
-          src="../../public/icons/day-icon.svg"
+          src="/icons/day-icon.svg"
           alt="day-icon"
         />
       )}
