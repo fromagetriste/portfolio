@@ -17,7 +17,7 @@
 }
 
 #React-JS {
-  color: $blue;
+  @include blue-gradient-properties;
 }
 .title-container.fade-in {
   opacity: 1;

@@ -1,10 +1,7 @@
 $white: rgb(243, 243, 243);
-$purple: #403976;
 $black: #000000;
 $blue: #38bdf8;
 $grey: #a1a1aa;
-$main-background: #09000d;
-$punchy-pink: #ff4ecd;
 $card-background: #1e293b;
 $color-for-borders: #2e3547;
 $grey-button: #323c49;
@@ -17,11 +14,11 @@ $greyish: #afb3bb;
 $blueish: #5eb4fb;
 $purplish: #c388fecf;
 $greenish: #9ed79dcb;
-$terminal-background: #2f354359;
+$terminal-background: #2f354380;
 // those colors are for code editor with Github theme
 
-@mixin pink-gradient-properties {
-  background: linear-gradient(0deg, #b249f8 0%, #ff1cf7 100%);
+@mixin blue-gradient-properties {
+  background: linear-gradient(0deg, #38bdf8 10%, #ade7ff 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -51,7 +48,6 @@ $font-2: "Inter-Black", "Segoe UI", Tahoma;
 
 body {
   font-family: $font-1;
-  background-image: url("/public/photos/hero-background.svg");
 }
 
 ul {
