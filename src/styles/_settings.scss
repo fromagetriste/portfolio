@@ -1,6 +1,6 @@
 $white: rgb(243, 243, 243);
 $black: #000000;
-$blue: #38bdf8;
+$blue: #32aadc;
 $grey: #a1a1aa;
 $card-background: #1e293b;
 $color-for-borders: #2e3547;
@@ -19,6 +19,16 @@ $terminal-background: #2f354380;
 
 @mixin blue-gradient-properties {
   background: linear-gradient(0deg, #38bdf8 10%, #ade7ff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@mixin pink-gradient-properties {
+  background: linear-gradient(0deg, #fa28de 10%, #fcadff 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -48,6 +58,7 @@ $font-2: "Inter-Black", "Segoe UI", Tahoma;
 
 body {
   font-family: $font-1;
+  background-image: url("/public/photos/hero-background.svg");
 }
 
 ul {

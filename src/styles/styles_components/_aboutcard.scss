@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto 2rem auto;
+  padding: 1rem;
+  width: 15rem;
+  height: 5rem;
+  background-color: #0f172a;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card::after,
+.card::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient($blue, grey, $blue);
+  background-image: conic-gradient($blue, $blue, $blue, #a600ff, $blue, $blue);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 2px;
+  border-radius: 12px;
+}
+.card::before {
+  filter: blur(1.5rem);
+  opacity: 0.4;
+}

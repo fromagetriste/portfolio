@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
-import Title from "./Title";
 
 const HeroSection = () => {
   const [displayClasses, setDisplayClasses] = useState({
-    "user-friendly": "",
-    rounded: "",
     "cd-btn": "",
     "box-size": "",
+    "user-friendly": "",
+    rounded: "",
     "a-b": "", // i need to end my state with a dummy data which i dont use, otherwise the function typingCharacters won't run properly on last object key. To solve the problem, i'd need to modify the function and get into over-complicated logic
   });
 
@@ -36,7 +34,7 @@ const HeroSection = () => {
         setIndexForWords(0);
       }
     }
-    let myInterval = setInterval(typingCharacters, 90); // starts the interval function
+    let myInterval = setInterval(typingCharacters, 160); // starts the interval function
 
     return () => {
       clearInterval(myInterval); // cleaning function (useEffect property) :
@@ -45,8 +43,6 @@ const HeroSection = () => {
 
   return (
     <div className="background">
-      <Navbar />
-      <Title />
       <main className="hero-container" id="hero-shadow">
         <section className="container" id={displayClasses["box-size"]}>
           <img
@@ -128,7 +124,7 @@ const HeroSection = () => {
             <span className="grey p-1">{"<"}</span>
             <span className="purple">h3</span>
             <span className="grey">{">"}</span> <br />
-            <span className="white p-2">My name is Damien.</span>
+            <span className="grey p-2">My name is Damien.</span>
             <span className="grey">{"<"}</span>
             <span className="purple">br</span>
             <span className="grey">{"/> "}</span> <br />
@@ -139,8 +135,8 @@ const HeroSection = () => {
             <span className="grey p-1">{"<"}</span>
             <span className="purple">p</span>
             <span className="grey">{">"}</span>
-            <span className="white">I am driven by beautiful, </span>
-            <span className="white">
+            <span className="grey">I am driven by beautiful, </span>
+            <span className="grey">
               robust and {displayClasses["user-friendly"]} interfaces.
             </span>
             <span className="grey">{"</"}</span>
@@ -154,7 +150,8 @@ const HeroSection = () => {
             <span className="green">"</span>
             <span className="green">{displayClasses["cd-btn"]}</span>
             <span className="green">"</span>
-            <span className="grey">{">"}</span>View my CV
+            <span className="grey">{">"}</span>
+            <span className="grey">View my CV</span>
             <span className="grey">{"</"}</span>
             <span className="purple">button</span>
             <span className="grey">{">"}</span> <br />
@@ -166,7 +163,8 @@ const HeroSection = () => {
             <span className="green">"</span>
             <span className="green">{displayClasses["cd-btn"]}</span>
             <span className="green">"</span>
-            <span className="grey">{">"}</span>Contact Me
+            <span className="grey">{">"}</span>
+            <span className="grey">Contact Me</span>
             <span className="grey">{"</"}</span>
             <span className="purple">button</span>
             <span className="grey">{">"}</span> <br />

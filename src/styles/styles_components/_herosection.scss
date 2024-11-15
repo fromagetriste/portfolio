@@ -1,13 +1,14 @@
 .background {
-  background-image: url("/public/photos/hero-background.svg");
-  height: 100vh;
+  // background-image: url("/public/photos/hero-background.svg");
+  // height: 100vh;
+  display: block;
 }
 
 .hero-container {
   display: flex;
   justify-content: center;
   margin: 7rem 1rem 0 1rem;
-  gap: 4rem;
+  gap: 6rem;
 }
 
 .terminal-container {
@@ -55,6 +56,7 @@
   transition: all 1s ease;
   transform: scale(1.1);
   z-index: 2;
+  margin-bottom: 10rem;
 
   .buttons-container {
     width: 100%;
@@ -114,6 +116,7 @@
   transition: all 1s ease;
   width: 18rem;
   height: 25rem;
+  margin-bottom: 0;
 }
 
 p {
@@ -150,6 +153,7 @@ p {
 .cd-btn {
   display: block;
   width: 100%;
+
   margin: 1rem 0 0 0;
   cursor: pointer;
   border: none;
@@ -173,8 +177,8 @@ p {
 #hero-shadow::before {
   content: "";
   position: absolute;
-  transform: translate(-9rem, 0px) rotate(20deg);
-  width: 50rem;
+  transform: translate(-9rem, 0rem) rotate(20deg);
+  width: 60rem;
   height: 4rem;
   background: radial-gradient(100% 20% at 50% 50%, $blue 100%, $blue 60%);
   filter: blur(80px);
