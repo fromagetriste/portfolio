@@ -1,7 +1,6 @@
 .background {
-  // background-image: url("/public/photos/hero-background.svg");
   // height: 100vh;
-  display: block;
+  // background-image: url("/public/photos/hero-background.svg");
 }
 
 .hero-container {
@@ -43,7 +42,6 @@
 }
 .container {
   display: flex;
-  background-color: $card-background;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -51,12 +49,12 @@
   padding: 0.4rem;
   border-radius: 10px;
   border-top: solid 0.5px rgb(58, 58, 58);
-  width: 21rem;
-  height: 19rem;
+  width: 18rem;
+  height: 25rem;
   transition: all 1s ease;
   transform: scale(1.1);
   z-index: 2;
-  margin-bottom: 10rem;
+  margin-bottom: 0;
 
   .buttons-container {
     width: 100%;
@@ -110,13 +108,11 @@
   padding: 1rem;
 }
 
-#box-size {
+#background {
   gap: 1rem;
   padding: 1rem;
   transition: all 1s ease;
-  width: 18rem;
-  height: 25rem;
-  margin-bottom: 0;
+  background-color: $card-background;
 }
 
 p {
@@ -125,7 +121,7 @@ p {
   color: rgb(170, 170, 170);
 }
 
-.rounded {
+.rounded-pic {
   border-radius: 500px;
   transition: all 2s ease;
 }
@@ -177,9 +173,9 @@ p {
 #hero-shadow::before {
   content: "";
   position: absolute;
-  transform: translate(-9rem, 0rem) rotate(20deg);
-  width: 60rem;
-  height: 4rem;
+  transform: translate(-9rem, 2rem) rotate(20deg);
+  width: 45rem;
+  height: 3rem;
   background: radial-gradient(100% 20% at 50% 50%, $blue 100%, $blue 60%);
   filter: blur(80px);
   z-index: 1;
