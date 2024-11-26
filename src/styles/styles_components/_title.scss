@@ -10,8 +10,12 @@
     font-weight: 1200;
     font-size: 3.5rem;
   }
+
   .second-title {
-    color: rgb(170, 170, 170);
+    color: $grey;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
     margin-top: 1rem;
   }
 }

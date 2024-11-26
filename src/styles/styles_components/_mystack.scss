@@ -6,25 +6,48 @@
     font-family: $font-2;
     font-size: 3.5rem;
   }
+  .sub-title {
+    color: $grey;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
   .flex-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
     margin-top: 5rem;
-    // to be removed :
-    margin-bottom: 20rem;
     margin-left: 20rem;
     margin-right: 20rem;
 
     .right {
       width: 35rem;
       aspect-ratio: 16/9;
-      background-image: url("/public/photos/stack/pink-background.svg");
       border-radius: 25px;
       font-weight: 900;
+      background-image: linear-gradient(
+        225deg,
+        hsl(298deg 100% 84%) 0%,
+        hsl(299deg 99% 82%) 16%,
+        hsl(299deg 99% 80%) 24%,
+        hsl(300deg 98% 78%) 30%,
+        hsl(301deg 98% 76%) 35%,
+        hsl(301deg 97% 74%) 40%,
+        hsl(302deg 97% 72%) 45%,
+        hsl(303deg 97% 70%) 50%,
+        hsl(304deg 96% 68%) 55%,
+        hsl(304deg 96% 66%) 60%,
+        hsl(305deg 96% 64%) 65%,
+        hsl(306deg 96% 63%) 70%,
+        hsl(307deg 96% 61%) 76%,
+        hsl(307deg 96% 59%) 84%,
+        hsl(308deg 95% 57%) 100%
+      );
 
       .react-banner {
-        background-color: rgba(31, 31, 31, 0.892);
+        background-color: rgba(31, 31, 31);
         margin: 4rem 3rem 3rem 3rem;
         border-radius: 50px;
         height: 3rem;
@@ -42,7 +65,7 @@
         margin: 0 2rem;
       }
       .element {
-        background-color: rgba(31, 31, 31, 0.892);
+        background-color: rgb(31, 31, 31);
         border-radius: 50px;
         height: 3rem;
         width: 40%;
@@ -77,7 +100,7 @@
       }
       .glass {
         background-color: rgba(255, 255, 255, 0.038);
-        width: 20rem;
+        width: 15rem;
         height: 3.5rem;
         display: flex;
         align-items: center;
@@ -102,12 +125,12 @@
 #typescript-shadow::before {
   content: "";
   position: absolute;
-  transform: translate(16rem, -2.5rem) rotate(0deg);
-  width: 25rem;
-  height: 5rem;
+  transform: translate(10rem, -2.5rem) rotate(0deg);
+  width: 30rem;
+  height: 7rem;
   background: radial-gradient(50% 20% at 100% 100%, #fa28de 100%, #fa28de 100%);
   filter: blur(130px);
-  z-index: 0;
+  z-index: -1;
 }
 
 #Stack-Gradient {

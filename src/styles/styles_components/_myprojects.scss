@@ -1,0 +1,46 @@
+.container-for-margins {
+  margin: 10rem 5rem 0 5rem;
+  //   to be removed
+  margin-bottom: 50rem;
+  .title {
+    text-align: center;
+    font-family: $font-2;
+    font-size: 3.5rem;
+  }
+  .sub-title {
+    color: $grey;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .my-projects-container {
+    display: flex;
+    justify-content: center;
+    // to be adjusted :
+    height: 100rem;
+    width: 100rem;
+    gap: 1rem;
+    .left {
+      height: 50rem;
+      width: 30rem;
+      .buttons-container {
+        height: 10rem;
+        border: solid 1px grey;
+      }
+      .description {
+        height: 20rem;
+        border: solid 1px chocolate;
+      }
+    }
+    .right {
+      height: 30rem;
+      width: 30rem;
+      border: solid 1px cyan;
+    }
+  }
+}
+
+#projects-gradient {
+  @include green-gradient-properties;
+}

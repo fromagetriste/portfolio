@@ -37,6 +37,16 @@ $terminal-background: #2f354362;
   -moz-text-fill-color: transparent;
 }
 
+@mixin green-gradient-properties {
+  background: linear-gradient(0deg, #28fa2f 10%, #adffad 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 @font-face {
   font-family: "Inter-Regular";
   src: url(../assets/fonts/Inter-Regular.ttf);
