@@ -17,36 +17,6 @@ $greenish: #9ed79dcb;
 $terminal-background: #2f354362;
 // those colors are for code editor with Github theme
 
-@mixin blue-gradient-properties {
-  background: linear-gradient(0deg, #38bdf8 10%, #ade7ff 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-@mixin pink-gradient-properties {
-  background: linear-gradient(0deg, #fa28de 10%, #fcadff 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-@mixin green-gradient-properties {
-  background: linear-gradient(0deg, #28fa2f 10%, #adffad 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
 @font-face {
   font-family: "Inter-Regular";
   src: url(../assets/fonts/Inter-Regular.ttf);
@@ -80,4 +50,34 @@ li {
 }
 a {
   text-decoration: none;
+}
+
+@mixin blue-gradient-properties {
+  background: linear-gradient(0deg, #38bdf8 10%, #ade7ff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@mixin pink-gradient-properties {
+  background: linear-gradient(0deg, #fa28de 10%, #fcadff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@mixin green-gradient-properties {
+  background: linear-gradient(0deg, #28fa2f 10%, #adffad 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }

@@ -1,6 +1,5 @@
 .section-container {
   margin: 10rem 3rem 0 3rem;
-
   .title {
     text-align: center;
     font-family: $font-2;
@@ -19,65 +18,43 @@
     justify-content: center;
     gap: 2rem;
     margin-top: 5rem;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin-left: auto;
+    margin-right: auto;
 
-    .right {
-      width: 35rem;
-      aspect-ratio: 16/9;
-      border-radius: 25px;
-      font-weight: 900;
-      background-image: linear-gradient(
-        225deg,
-        hsl(298deg 100% 84%) 0%,
-        hsl(299deg 99% 82%) 16%,
-        hsl(299deg 99% 80%) 24%,
-        hsl(300deg 98% 78%) 30%,
-        hsl(301deg 98% 76%) 35%,
-        hsl(301deg 97% 74%) 40%,
-        hsl(302deg 97% 72%) 45%,
-        hsl(303deg 97% 70%) 50%,
-        hsl(304deg 96% 68%) 55%,
-        hsl(304deg 96% 66%) 60%,
-        hsl(305deg 96% 64%) 65%,
-        hsl(306deg 96% 63%) 70%,
-        hsl(307deg 96% 61%) 76%,
-        hsl(307deg 96% 59%) 84%,
-        hsl(308deg 95% 57%) 100%
-      );
-
-      .react-banner {
-        background-color: rgba(31, 31, 31);
-        margin: 4rem 3rem 3rem 3rem;
-        border-radius: 50px;
-        height: 3rem;
+    .droite {
+      height: 18rem;
+      width: 30rem;
+      .glass-card-react {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 0.3rem;
-        font-size: 1.1rem;
-      }
-      .elements-container {
-        display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin: 0 2rem;
-      }
-      .element {
-        background-color: rgb(31, 31, 31);
-        border-radius: 50px;
-        height: 3rem;
-        width: 40%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255, 0.038);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        height: 100%;
+        width: 100%;
+        .logo-react-container {
+          height: 11rem;
+          width: 11rem;
+          .card-logo-react {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .skills-react-container {
+          .skill-react {
+            padding: 0.5rem;
+            font-weight: 900;
+            font-size: 1.1rem;
+          }
+        }
       }
     }
   }
-  .left {
+  // __________________________________________________________
+  .gauche {
     width: 30rem;
+    height: 18rem;
     .title {
       color: $grey;
       font-size: 1.5rem;
@@ -88,7 +65,7 @@
       align-items: center;
       justify-content: center;
       gap: 1rem;
-      .left-items {
+      .gauche-items {
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -100,6 +77,7 @@
       }
       .glass {
         background-color: rgba(255, 255, 255, 0.038);
+        border: 1px solid rgba(255, 255, 255, 0.05);
         width: 15rem;
         height: 3.5rem;
         display: flex;
@@ -114,7 +92,7 @@
   }
 }
 
-.left-logo {
+.gauche-logo {
   width: 1rem;
   height: 1rem;
 }
@@ -125,9 +103,9 @@
 #typescript-shadow::before {
   content: "";
   position: absolute;
-  transform: translate(10rem, -2.5rem) rotate(0deg);
+  transform: translate(4rem, -2.5rem) rotate(0deg);
   width: 30rem;
-  height: 7rem;
+  height: 4rem;
   background: radial-gradient(50% 20% at 100% 100%, #fa28de 100%, #fa28de 100%);
   filter: blur(130px);
   z-index: -1;

@@ -10,13 +10,13 @@ const MyStack = () => {
         I am more focused on React, <br /> but also worked with other tools
       </div>
       <div className="flex-container">
-        <div className="left">
+        <div className="gauche">
           <div className="title">Non-React tools :</div>
           <div className="items">
-            <div className="left-items">
+            <div className="gauche-items">
               <div className="glass python">
                 <img
-                  className="left-logo"
+                  className="gauche-logo"
                   src="/public/icons/stack/python.svg"
                   alt="python logo"
                 />
@@ -24,7 +24,7 @@ const MyStack = () => {
               </div>
               <div className="glass">
                 <img
-                  className="left-logo"
+                  className="gauche-logo"
                   src="/public/icons/stack/django.svg"
                   alt="django logo"
                 />
@@ -32,7 +32,7 @@ const MyStack = () => {
               </div>
               <div className="glass">
                 <img
-                  className="left-logo"
+                  className="gauche-logo"
                   src="/public/icons/stack/panda.svg"
                   alt="panda logo"
                 />
@@ -42,7 +42,7 @@ const MyStack = () => {
             <div className="right-items">
               <div className="glass">
                 <img
-                  className="left-logo"
+                  className="gauche-logo"
                   src="/public/icons/stack/sass.svg"
                   alt="sass logo"
                 />
@@ -50,7 +50,7 @@ const MyStack = () => {
               </div>
               <div className="glass" id="typescript-shadow">
                 <img
-                  className="left-logo"
+                  className="gauche-logo"
                   src="/public/icons/stack/typescript.svg"
                   alt="typescript logo"
                 />
@@ -58,7 +58,7 @@ const MyStack = () => {
               </div>
               <div className="glass">
                 <img
-                  className="left-logo"
+                  className="gauche-logo"
                   src="/public/icons/stack/github.svg"
                   alt="github logo"
                 />
@@ -68,13 +68,21 @@ const MyStack = () => {
           </div>
         </div>
 
-        <div className="right" id="react-background">
-          <div className="react-banner">React Ecosystem</div>
-          <div className="elements-container">
-            <div className="element first">React Hooks</div>
-            <div className="element second">State Management</div>
-            <div className="element third">React Router</div>
-            <div className="element fourth">API Fetching</div>
+        <div className="droite">
+          <div className="glass-card-react">
+            <div className="logo-react-container">
+              <img
+                src="/public/icons/stack/react-logo-pink.svg"
+                alt="logo react"
+                className="card-logo-react"
+              />
+            </div>
+            <ul className="skills-react-container">
+              <li className="skill-react">Hooks</li>
+              <li className="skill-react">State Management</li>
+              <li className="skill-react">API Fetching</li>
+              <li className="skill-react">React Router</li>
+            </ul>
           </div>
         </div>
       </div>

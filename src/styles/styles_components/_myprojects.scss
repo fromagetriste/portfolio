@@ -1,19 +1,24 @@
 .container-for-margins {
-  margin: 10rem 5rem 0 5rem;
-  //   to be removed
+  margin: 10rem 5rem 0 5rem; //   to be removed
+
   margin-bottom: 50rem;
   .title {
     text-align: center;
     font-family: $font-2;
     font-size: 3.5rem;
+    #projects-gradient {
+      @include green-gradient-properties;
+    }
   }
   .sub-title {
     color: $grey;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     margin-top: 1rem;
     text-align: center;
   }
+
+  // _____________________________________________________
   .my-projects-container {
     display: flex;
     justify-content: center;
@@ -21,26 +26,140 @@
     height: 100rem;
     width: 100rem;
     gap: 1rem;
+    // _____________________________________________________
+
     .left {
       height: 50rem;
-      width: 30rem;
+      width: 50rem;
       .buttons-container {
-        height: 10rem;
-        border: solid 1px grey;
+        height: 7rem;
+        // border: solid 1px grey;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 6rem;
+        padding-left: 5rem;
       }
-      .description {
+      .radio-container {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+
+        .radio-logo {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+      input[type="radio"] {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        position: absolute;
+      }
+      label {
+        cursor: pointer;
+      }
+      // _____________________________________________________
+
+      .description-container {
         height: 20rem;
-        border: solid 1px chocolate;
+        width: 40rem;
+        background-color: rgb(255, 255, 255, 0.038);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        .project-title {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1.5rem 1rem 0 1rem;
+          @include green-gradient-properties;
+        }
+        .project-description {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 1rem 1rem 0 1rem;
+          font-size: 1rem;
+          margin-top: 1rem;
+        }
+        .used-tech {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          padding: 1rem;
+          margin-top: 2rem;
+          .tech-element {
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            background-color: #26f12c22;
+          }
+        }
+
+        .links {
+          margin-top: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-right: 2rem;
+          :hover {
+            opacity: 0.5;
+            transition: 0.1s;
+          }
+
+          .anchor-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .logo-visit {
+            margin-left: 2rem;
+            margin-right: 0.5rem;
+            height: 2rem;
+            width: 2rem;
+          }
+        }
       }
-    }
-    .right {
-      height: 30rem;
-      width: 30rem;
-      border: solid 1px cyan;
     }
   }
-}
+  // _____________________________________________________
 
-#projects-gradient {
-  @include green-gradient-properties;
+  .right {
+    height: 30rem;
+    width: 30rem;
+    border: solid 1px rgba(248, 255, 255, 0.475);
+    border-radius: 20px;
+    .photo-project {
+      height: 29.9rem;
+      width: 29.9rem;
+      border-radius: 20px;
+      margin: auto;
+    }
+  }
+
+  // _____________________________________________________
+
+  #description-container-shadow {
+    position: relative;
+  }
+  #description-container-shadow::before {
+    content: "";
+    position: absolute;
+    transform: translate(-4rem, -5rem) rotate(10deg);
+    width: 50rem;
+    height: 4rem;
+    background: radial-gradient(
+      50% 20% at 100% 100%,
+      #28fa2f 100%,
+      #28fa2f 100%
+    );
+    filter: blur(130px);
+    z-index: -1;
+  }
 }

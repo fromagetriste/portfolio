@@ -1,7 +1,6 @@
 .title-container {
   text-align: center;
   margin-top: 5rem;
-  opacity: 0;
   transform: translateY(20px); /* Optional: adds a slight slide-up effect */
   transition: opacity 1s ease-out, transform 1s ease-out;
   .main-title {
@@ -23,7 +22,4 @@
 #React-JS {
   @include blue-gradient-properties;
 }
-.title-container.fade-in {
-  opacity: 1;
-  transform: translateY(0); /* Reset position */
-}
+

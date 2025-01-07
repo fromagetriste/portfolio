@@ -16,9 +16,7 @@ function calculateAge(birthDate) {
   return age;
 }
 
-// Use your birthdate
 const myAge = calculateAge("1992-03-14");
-// console.log("Your age is:", myAge);
 
 export const cardData = {
   firstCard: {

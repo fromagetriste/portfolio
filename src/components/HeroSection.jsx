@@ -6,6 +6,7 @@ const HeroSection = () => {
     background: "",
     "user-friendly": "",
     "rounded-pic": "",
+    FR: "",
     "a-b": "", // i need to end my state with a dummy data which i dont use, otherwise the function typingCharacters won't run properly on last object key. To solve the problem, i'd need to modify the function and get into over-complicated logic
   });
 
@@ -34,7 +35,7 @@ const HeroSection = () => {
         setIndexForWords(0);
       }
     }
-    let myInterval = setInterval(typingCharacters, 160); // starts the interval function
+    let myInterval = setInterval(typingCharacters, 140); // starts the interval function
 
     return () => {
       clearInterval(myInterval); // cleaning function (useEffect property) :
@@ -45,14 +46,23 @@ const HeroSection = () => {
     <div className="background">
       <main className="hero-container" id="hero-shadow">
         <section className="container" id={displayClasses["background"]}>
-          <img
-            id="profile-pic"
-            className={displayClasses["rounded-pic"]}
-            src="/photos/profile-picture-square.jpg"
-            alt="profile picture"
-          />
+          <div className="profile-pic-container">
+            <img
+              id="profile-pic"
+              className={displayClasses["rounded-pic"]}
+              src="/photos/profile-picture-square.jpg"
+              alt="profile picture"
+            />
+            <img
+              src="/icons/french-flag.svg"
+              alt="french flag"
+              className="french-flag"
+              id={displayClasses["FR"]}
+            />
+          </div>
           <h3 className="center-txt">
-            My name is Damien. <br />
+            My name is Damien
+            <br />
           </h3>{" "}
           <p className="center">
             {/* className purple is down below here */}I am driven by{" "}
@@ -124,7 +134,7 @@ const HeroSection = () => {
             <span className="grey p-1">{"<"}</span>
             <span className="purple">h3</span>
             <span className="grey">{">"}</span> <br />
-            <span className="grey p-2">My name is Damien.</span>
+            <span className="grey p-2">My name is Damien</span>
             <span className="grey">{"<"}</span>
             <span className="purple">br</span>
             <span className="grey">{"/> "}</span> <br />
