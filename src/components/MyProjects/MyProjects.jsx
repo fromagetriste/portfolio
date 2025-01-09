@@ -1,57 +1,41 @@
 import React, { useState, useEffect } from "react";
-import projects from "./projects-data";
+import projectsData from "./projects-data";
+import TitleProjects from "./TitleProjects";
+import ChoseProjectButtons from "./ChoseProjectButtons";
 
 const MyProjects = () => {
-  const [selectedProject, setSelectedProject] = useState("option1");
+  const [selectedProject, setSelectedProject] = useState(1);
 
   const handleRadioChange = (e) => {
-    setSelectedProject(e.target.value);
+    setSelectedProject(Number(e.target.value));
   };
 
   // for debugging only :
-  // useEffect(() => {
-  //   console.log("Selected project (after state update):", selectedProject);
-  // }, [selectedProject]);
+  useEffect(() => {
+    console.log("Selected project :", selectedProject);
+    console.log(projectsData[selectedProject - 1]); // -1 because index start with 0
+    console.log(projectsData[selectedProject - 1].framework);
+  }, [selectedProject]);
 
   return (
     <section className="container-for-margins">
-      <div className="title">
-        My <span id="projects-gradient">Projects</span>
-      </div>
-      <div className="sub-title">Here are my 4 highlighted projects</div>
+      <TitleProjects />
       <div className="my-projects-container">
+        {/* LEFT CONTAINER */}
         <div className="left">
           {/* RADIO BUTTONS WITH MAP METHOD */}
-          <div className="buttons-container">
-            {projects.map((project) => (
-              <div key={project.id}>
-                <input
-                  type="radio"
-                  name="projects"
-                  id={project.option}
-                  value={project.option}
-                  onChange={handleRadioChange}
-                  checked={selectedProject === project.option}
-                />
-                <label htmlFor={project.option}>
-                  <div className="radio-container">
-                    <img
-                      src={project.src}
-                      alt="API logo"
-                      className="radio-logo"
-                    />
-                    <div className="radio-text">{project.tech}</div>
-                  </div>
-                </label>
-              </div>
-            ))}
-          </div>
-          {/* LEFT CONTAINER */}
+          <ChoseProjectButtons
+            projectsData={projectsData}
+            handleRadioChange={handleRadioChange}
+            selectedProject={selectedProject}
+          />
           <div
             className="description-container"
             id="description-container-shadow"
           >
-            <h1 className="project-title">React Movies</h1>
+            <h1 className="project-title">
+              {projectsData[selectedProject - 1].framework}
+            </h1>
             <h3 className="project-description">
               A React project consisting in fetching data from a movies API,
               sort and filter data, and render in Card components. Possibility

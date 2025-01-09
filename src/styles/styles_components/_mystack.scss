@@ -31,6 +31,8 @@
         border-radius: 20px;
         background-color: rgb(255, 255, 255, 0.038);
         border: 1px solid rgba(255, 255, 255, 0.05);
+        border-bottom: solid rgba(255, 255, 255, 0.248) 1px;
+        border-right: solid rgba(255, 255, 255, 0.248) 1px;
         height: 100%;
         width: 100%;
         .logo-react-container {
@@ -78,6 +80,8 @@
       .glass {
         background-color: rgba(255, 255, 255, 0.038);
         border: 1px solid rgba(255, 255, 255, 0.05);
+        border-bottom: solid rgba(255, 255, 255, 0.248) 1px;
+        border-left: solid rgba(255, 255, 255, 0.248) 1px;
         width: 15rem;
         height: 3.5rem;
         display: flex;
