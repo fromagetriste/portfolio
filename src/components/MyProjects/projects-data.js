@@ -30,7 +30,7 @@ const projectsData = [
         tech: ["Counties API", "React Router", "useEffect", "Axios", "SASS"],
         website: "https://countries-damien.netlify.app/",
         github: "https://github.com/fromagetriste/countries-API",
-        screenshot: "/public/photos/myprojects/movies-app.png",
+        screenshot: "/public/photos/myprojects/countries-app.png",
     },
     {
         id: 4,
