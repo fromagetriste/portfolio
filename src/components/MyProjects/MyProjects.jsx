@@ -3,15 +3,15 @@ import projectsData from "./projects-data";
 import TitleProjects from "./TitleProjects";
 import ChoseProjectButtons from "./ChoseProjectButtons";
 import ProjectDetails from "./ProjectDetails";
-import PhotoOfProject from "./PhotoOfProject";
+import ProjectScreenshot from "./ProjectScreenshot";
 
 const MyProjects = () => {
   const [selectedProject, setSelectedProject] = useState(1);
-  const [isSelected, setIsSelected] = useState();
 
   const handleRadioChange = (e) => {
     setSelectedProject(Number(e.target.value));
   };
+  // we know the selected project, so we look for its details in the data
   const projectDetails = projectsData[selectedProject - 1];
 
   return (
@@ -26,7 +26,7 @@ const MyProjects = () => {
           />
           <ProjectDetails projectDetails={projectDetails} />
         </div>
-        <PhotoOfProject projectDetails={projectDetails} />
+        <ProjectScreenshot projectDetails={projectDetails} />
       </div>
     </section>
   );

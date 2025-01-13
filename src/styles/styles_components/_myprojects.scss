@@ -1,8 +1,5 @@
 .container-for-margins {
   margin: 10rem 5rem 0 5rem; //   to be removed
-  transition: opacity 1s ease-in-out;
-  transition-duration: 1s;
-
   margin-bottom: 50rem;
 
   .title {
@@ -55,10 +52,16 @@
         .radio-logo {
           width: 2.5rem;
           height: 2.5rem;
+          transition: opacity 0.3s ease-in-out;
         }
         .radio-text {
-          color: white;
-          font-weight: 600;
+          transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+          color: $white !important;
+        }
+        .radio-text-selected {
+          color: #28fa2f;
+          font-weight: 500;
+          transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
         }
       }
       input[type="radio"] {
@@ -88,7 +91,7 @@
           align-items: center;
           justify-content: center;
           padding: 1.5rem 1rem 0 1rem;
-          @include green-gradient-properties;
+          color: $white;
         }
         .project-description {
           display: flex;
@@ -98,6 +101,7 @@
           padding: 1rem 1rem 0 1rem;
           font-size: 1rem;
           margin-top: 1rem;
+          font-weight: 200;
         }
         .used-tech {
           display: flex;

@@ -1,10 +1,11 @@
 const projectsData = [
     {
         id: 1,
-        src: "/public/icons/projects/react-logo-grey.svg",
+        src: "/public/icons/projects/movies.svg",
+        srcGreen: "/public/icons/projects/movies-green.svg",
         framework: "React",
-        title: "React Movies",
-        description: "A React project consisting of fetching data from a movies API, sorting and filtering data, and rendering it in Card components. Possibility to add Movies to Favorites.",
+        title: "Movies App from API",
+        description: "A React project consisting of fetching data from a movies API, sorting and filtering data, and rendering it in Card components. Possibility to add Movies to Favorites with Local Storage.",
         tech: ["Local Storage", "React Router", "useEffect", "Axios", "SASS"],
         website: "https://damien-movies.netlify.app/",
         github: "https://github.com/fromagetriste/movies-API",
@@ -12,9 +13,10 @@ const projectsData = [
     },
     {
         id: 2,
-        src: "/public/icons/projects/typescript.svg",
+        src: "/public/icons/projects/todo-list.svg",
+        srcGreen: "/public/icons/projects/todo-list-green.svg",
         framework: "Typescript",
-        title: "React Movies",
+        title: "A to-do list in Typescript",
         description: "A React project consisting of fetching data from a movies API, sorting and filtering data, and rendering it in Card components. Possibility to add Movies to Favorites.",
         tech: ["Local Storage", "React Router", "useEffect", "Axios", "SASS"],
         website: "https://damien-movies.netlify.app/",
@@ -24,6 +26,7 @@ const projectsData = [
     {
         id: 3,
         src: "/public/icons/projects/state.svg",
+        srcGreen: "",
         framework: "Zustand",
         title: "Countries API",
         description: "A React project consisting of fetching data from a movies API, sorting and filtering data, and rendering it in Card components. Possibility to add Movies to Favorites.",
@@ -35,6 +38,7 @@ const projectsData = [
     {
         id: 4,
         src: "/public/icons/projects/django.svg",
+        srcGreen: "",
         framework: "Django",
         title: "Backend Project",
         description: "A project I made a few years ago to solve an actual issue in the company where I worked, to automate a time-consuming task that my colleagues and I had to deal with everyday.",

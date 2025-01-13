@@ -1,4 +1,4 @@
-const PhotoOfProject = ({ projectDetails }) => {
+const ProjectScreenshot = ({ projectDetails }) => {
   return (
     <div className="right">
       <img
@@ -10,4 +10,4 @@ const PhotoOfProject = ({ projectDetails }) => {
   );
 };
 
-export default PhotoOfProject;
+export default ProjectScreenshot;
