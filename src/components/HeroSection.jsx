@@ -35,7 +35,7 @@ const HeroSection = () => {
         setIndexForWords(0);
       }
     }
-    let myInterval = setInterval(typingCharacters, 140); // starts the interval function
+    let myInterval = setInterval(typingCharacters, 100); // starts the interval function
 
     return () => {
       clearInterval(myInterval); // cleaning function (useEffect property) :

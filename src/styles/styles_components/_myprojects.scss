@@ -80,10 +80,9 @@
       .description-container {
         height: 20rem;
         width: 40rem;
-        background-color: rgb(255, 255, 255, 0.038);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        border-bottom: solid rgba(255, 255, 255, 0.248) 1px;
-        border-left: solid rgba(255, 255, 255, 0.248) 1px;
+        background-color: #111113;
+        border-bottom: solid rgba(0, 255, 8, 0.248) 1px;
+        border-left: solid rgba(0, 255, 8, 0.248) 1px;
 
         border-radius: 20px;
         .project-title {
@@ -91,7 +90,6 @@
           align-items: center;
           justify-content: center;
           padding: 1.5rem 1rem 0 1rem;
-          color: $white;
         }
         .project-description {
           display: flex;
@@ -102,6 +100,7 @@
           font-size: 1rem;
           margin-top: 1rem;
           font-weight: 200;
+          color: $grey;
         }
         .used-tech {
           display: flex;
@@ -114,7 +113,7 @@
             border-radius: 5px;
             padding: 0.5rem 1rem;
             font-size: 1rem;
-            background-color: #00000092;
+            background-color: #43ab4992;
             border-left: solid rgba(151, 151, 151, 0.634) 1px;
             border-bottom: solid rgba(151, 151, 151, 0.634) 1px;
           }
@@ -167,18 +166,31 @@
   #description-container-shadow {
     position: relative;
   }
-  #description-container-shadow::after {
-    content: "";
-    position: absolute;
-    transform: translate(5rem, -10rem);
-    width: 30rem;
-    height: 6rem;
-    background: radial-gradient(
-      50% 20% at 100% 100%,
-      #28fa2f 100%,
-      #28fa2f 100%
-    );
-    filter: blur(130px);
-    z-index: -1;
-  }
+  // #description-container-shadow::after {
+  //   content: "";
+  //   position: absolute;
+  //   // careful not to over-ride radio buttons
+  //   transform: translate(0rem, -19.5rem);
+  //   width: 40rem;
+  //   height: 6rem;
+  //   background: radial-gradient(
+  //     50% 20% at 100% 100%,
+  //     #28fa2f 100%,
+  //     #28fa2f 100%
+  //   );
+  //   filter: blur(130px);
+  //   z-index: -1;
+  // }
+}
+
+#description-container-shadow::after {
+  content: "";
+  position: absolute;
+  // careful not to over-ride radio buttons
+  transform: translate(8rem, -16.3rem);
+  width: 35rem;
+  height: 9rem;
+  background: radial-gradient(50% 20% at 100% 100%, #28fa2f 100%, #28fa2f 100%);
+  filter: blur(150px);
+  z-index: -1;
 }
