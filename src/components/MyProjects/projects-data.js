@@ -21,7 +21,7 @@ const projectsData = [
         tech: ["Local Storage", "React Router", "useEffect", "Axios", "SASS"],
         website: "https://damien-movies.netlify.app/",
         github: "https://github.com/fromagetriste/movies-API",
-        screenshot: "/public/photos/myprojects/movies-app.png",
+        screenshot: "/public/photos/myprojects/typescript.avif",
     },
     {
         id: 3,
@@ -45,7 +45,7 @@ const projectsData = [
         tech: ["Python", "Django", "Panda", "Excel Writer", "Bootstrap"],
         website: "https://damien-movies.netlify.app/",
         github: "https://github.com/fromagetriste/movies-API",
-        screenshot: "/public/photos/myprojects/movies-app.png",
+        screenshot: "/public/photos/myprojects/django.webp",
     },
 ];
 

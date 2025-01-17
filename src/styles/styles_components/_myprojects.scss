@@ -78,12 +78,11 @@
       // _____________________________________________________
 
       .description-container {
-        height: 20rem;
+        height: 21rem;
         width: 40rem;
         background-color: #111113;
         border-bottom: solid rgba(0, 255, 8, 0.248) 1px;
         border-left: solid rgba(0, 255, 8, 0.248) 1px;
-
         border-radius: 20px;
         .project-title {
           display: flex;
@@ -160,37 +159,25 @@
       margin: auto;
     }
   }
-
   // _____________________________________________________
 
   #description-container-shadow {
     position: relative;
   }
-  // #description-container-shadow::after {
-  //   content: "";
-  //   position: absolute;
-  //   // careful not to over-ride radio buttons
-  //   transform: translate(0rem, -19.5rem);
-  //   width: 40rem;
-  //   height: 6rem;
-  //   background: radial-gradient(
-  //     50% 20% at 100% 100%,
-  //     #28fa2f 100%,
-  //     #28fa2f 100%
-  //   );
-  //   filter: blur(130px);
-  //   z-index: -1;
-  // }
-}
 
-#description-container-shadow::after {
-  content: "";
-  position: absolute;
-  // careful not to over-ride radio buttons
-  transform: translate(8rem, -16.3rem);
-  width: 35rem;
-  height: 9rem;
-  background: radial-gradient(50% 20% at 100% 100%, #28fa2f 100%, #28fa2f 100%);
-  filter: blur(150px);
-  z-index: -1;
+  #description-container-shadow::after {
+    content: "";
+    position: absolute;
+    // careful not to over-ride radio buttons
+    transform: translate(6.5rem, -16.3rem);
+    width: 35rem;
+    height: 10rem;
+    background: radial-gradient(
+      50% 20% at 100% 100%,
+      #28fa2f 100%,
+      #28fa2f 100%
+    );
+    filter: blur(110px);
+    z-index: -1;
+  }
 }

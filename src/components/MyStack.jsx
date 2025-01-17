@@ -43,10 +43,10 @@ const MyStack = () => {
               <div className="glass">
                 <img
                   className="gauche-logo"
-                  src="/public/icons/stack/sass.svg"
+                  src="/public/icons/stack/tailwind.svg"
                   alt="sass logo"
                 />
-                SASS
+                Tailwind / SASS
               </div>
               <div className="glass" id="typescript-shadow">
                 <img
