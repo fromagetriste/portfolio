@@ -4,7 +4,7 @@ const MyStack = () => {
   return (
     <section className="section-container">
       <div className="title">
-        Tech <span id="Stack-Gradient">Stack</span>
+        My <span id="Stack-Gradient">Stack</span>
       </div>
       <div className="sub-title">
         I am more focused on React, <br /> but also worked with other tools

@@ -1,6 +1,5 @@
 .container-for-margins {
   margin: 10rem 5rem 0 5rem; //   to be removed
-  margin-bottom: 50rem;
 
   .title {
     text-align: center;
@@ -23,13 +22,13 @@
     display: flex;
     justify-content: center;
     // to be adjusted :
-    height: 100rem;
+    height: auto;
     width: 100%;
     gap: 1rem;
     // _____________________________________________________
 
     .left-container {
-      height: 50rem;
+      height: 35rem;
       width: 50rem;
       .buttons-container {
         height: 7rem;

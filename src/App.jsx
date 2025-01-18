@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe/AboutMe";
+import ContactMe from "./components/ContactMe/ContactMe";
 import HeroSection from "./components/HeroSection";
 import MyProjects from "./components/MyProjects/MyProjects";
 import MyStack from "./components/MyStack";
@@ -16,6 +17,7 @@ function App() {
       <AboutMe />
       <MyStack />
       <MyProjects />
+      <ContactMe />
     </>
   );
 }

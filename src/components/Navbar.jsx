@@ -11,7 +11,6 @@ const Navbar = () => {
         <ul className="navigation-sections">
           <li>Home</li>
           <li>Stack</li>
-          <li>Demo</li>
           <li>Projects</li>
           <li>Contact</li>
         </ul>
