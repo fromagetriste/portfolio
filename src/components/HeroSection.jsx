@@ -124,7 +124,9 @@ const HeroSection = () => {
             <span className="green">"</span>
             <br />
             <span className="orange italic p-2">src=</span>
-            <span className="green">{'"./photos/profile-picture.jpg"'}</span>
+            <span className="green">
+              {'"./photos/hero/profile-picture.jpg"'}
+            </span>
             <br />
             <span className="orange italic p-2">alt=</span>
             <span className="green">{'"profile picture"'}</span>

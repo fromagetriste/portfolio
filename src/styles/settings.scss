@@ -73,7 +73,17 @@ a {
 }
 
 @mixin green-gradient-properties {
-  background: linear-gradient(0deg, #28fa2f 10%, #adffad 100%);
+  background: linear-gradient(0deg, #00ff08 10%, #c5ffc5 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@mixin orange-gradient-properties {
+  background: linear-gradient(0deg, #da6d24 40%, #ffc676 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
