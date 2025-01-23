@@ -13,6 +13,7 @@ const Navbar = () => {
           <li>Stack</li>
           <li>Projects</li>
           <li>Contact</li>
+          <li>View CV</li>
         </ul>
       </div>
 

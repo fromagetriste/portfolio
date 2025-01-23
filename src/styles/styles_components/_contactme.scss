@@ -57,9 +57,35 @@
       font-size: 1rem;
     }
 
-    .form-input:focus {
+    _____________________________________________________________________
+    // Fix autofill problem, taken from chat gpt :
+    input:-webkit-autofill::placeholder,
+    textarea:-webkit-autofill::placeholder {
+      color: white; /* Match your placeholder style */
+    }
+    input:-webkit-autofill,
+    textarea:-webkit-autofill {
+      background-color: black;
+      color: white;
+      -webkit-box-shadow: 0 0 0px 1000px black inset !important; /* Override autofill highlight */
+    }
+
+    input:-webkit-autofill::first-line,
+    textarea:-webkit-autofill::first-line {
+      color: white; /* Specifically targets the text inside autofilled inputs */
+    }
+
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill:focus {
+      border-color: orange; /* Same orange border for autofilled inputs on focus */
+      color: white; /* Ensure text remains visible */
+      outline: none;
+    }
+
+    ____________________________________________________________________
+      .form-input:focus {
       color: $white;
-      outline: none !important;
+      outline: none;
       border-color: orange;
       font-size: 1rem;
     }
@@ -87,7 +113,7 @@
   // _______________________FORM-CARD_____________________________________
   .form-card {
     // border: 1px red solid;
-    background-color: rgb(255, 255, 255, 0.038);
+    background-color: rgba(59, 59, 59, 0.038);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-bottom: solid rgba(255, 255, 255, 0.248) 1px;
     border-right: solid rgba(255, 255, 255, 0.248) 1px;
@@ -159,10 +185,10 @@
 #contact-shadow::before {
   content: "";
   position: absolute;
-  transform: translate(-24rem, 0rem) rotate(0deg);
-  width: 20rem;
+  transform: translate(-20rem, 0rem) rotate(0deg);
+  width: 23rem;
   height: 6rem;
   background: radial-gradient(50% 20% at 100% 100%, #da6d24 100%, #da6d24 100%);
-  filter: blur(160px);
+  filter: blur(110px);
   z-index: -1;
 }
