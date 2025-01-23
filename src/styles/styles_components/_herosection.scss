@@ -37,9 +37,11 @@
   display: inline-block;
   width: 9rem;
   height: 9rem;
+
   #profile-pic {
     width: 100%;
     height: 100%;
+    filter: brightness(90%);
   }
   .french-flag {
     position: absolute;

@@ -50,7 +50,7 @@ const HeroSection = () => {
             <img
               id="profile-pic"
               className={displayClasses["rounded-pic"]}
-              src="/photos/profile-picture-square.jpg"
+              src="/photos/hero/profile-picture-damien.png"
               alt="profile picture"
             />
             <img

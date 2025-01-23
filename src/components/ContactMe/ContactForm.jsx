@@ -1,7 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Spinner from "./Spinner";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const ContactForm = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -13,46 +17,76 @@ export const ContactForm = () => {
       })
       .then(
         () => {
-          alert("Your message was sent successfully!");
           form.current.reset();
+          toast.success("You received an e-mail confirmation.", {
+            position: "top-center",
+            autoClose: 4000, // Auto-close after 3 seconds
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+          setIsLoading(false);
         },
         (error) => {
-          alert("Failed to send your message. Please try again.", error.text);
+          toast.error("Failed. Contact me on WhatsApp instead.", {
+            position: "top-center",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+          form.current.reset();
+          setIsLoading(false);
+          console.error("EmailJS error:", error.text);
         }
       );
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="form">
-      <input
-        className="form-input"
-        type="text"
-        id="name"
-        name="from_name"
-        placeholder="Name"
-        autoComplete="name"
-        required
-      />
-      <input
-        className="form-input"
-        type="email"
-        id="email"
-        name="from_email"
-        placeholder="Email"
-        autoComplete="email"
-        required
-      />
-      <textarea
-        className="form-input"
-        id="message"
-        name="message"
-        placeholder="Message"
-        required
-      ></textarea>
-      <button type="submit" value="Send" className="submit-button">
-        Send
-      </button>
-    </form>
+    <>
+      <form ref={form} onSubmit={sendEmail} className="form">
+        <input
+          className="form-input"
+          type="text"
+          id="name"
+          name="from_name"
+          placeholder="Name"
+          autoComplete="name"
+          required
+        />
+        <input
+          className="form-input"
+          type="email"
+          id="email"
+          name="from_email"
+          placeholder="Email"
+          autoComplete="email"
+          required
+        />
+        <textarea
+          className="form-input"
+          id="message"
+          name="message"
+          placeholder="Message"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          value="Send"
+          className="submit-button"
+          onClick={() => setIsLoading(true)}
+        >
+          {isLoading ? <Spinner /> : "Send"}
+        </button>
+      </form>
+      <ToastContainer />
+    </>
   );
 };
 
