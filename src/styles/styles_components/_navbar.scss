@@ -21,9 +21,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    li {
-      margin: 0 0.5rem;
-    }
+    gap: 1rem;
+  }
+  .navigation-sections > * {
+    cursor: pointer;
+    transition: filter 0.3s ease;
+  }
+  .navigation-sections > *:hover {
+    filter: brightness(0.5);
   }
   .right-group {
     display: flex;

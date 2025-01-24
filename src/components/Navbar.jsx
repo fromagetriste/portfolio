@@ -1,24 +1,30 @@
 import React from "react";
-import DarkModeButton from "./DarkModeButton";
 import GitHubButton from "./GitHubButton";
 import LinkedInButton from "./LinkedInButton";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <nav className="nav-container">
+    <nav className="nav-container" id="NavIdForScroll">
       <div className="left-group">
         <img className="logo-dev" src="/icons/web-icon.svg" alt="dev-icon" />
         <ul className="navigation-sections">
-          <li>Home</li>
-          <li>Stack</li>
-          <li>Projects</li>
-          <li>Contact</li>
-          <li>View CV</li>
+          <Link to="NavIdForScroll" smooth={true} duration={500}>
+            Home
+          </Link>
+          <Link to="StackIdForScroll" smooth={true} duration={500}>
+            Stack
+          </Link>
+          <Link to="ProjectsIdForScroll" smooth={true} duration={500}>
+            Projects
+          </Link>
+          <Link to="ContactIdForScroll" smooth={true} duration={500}>
+            Contact
+          </Link>
         </ul>
       </div>
 
       <div className="right-group">
-        <DarkModeButton isDarkMode={true} />
         <div className="vertical-bar"></div>
         <LinkedInButton />
         <GitHubButton />

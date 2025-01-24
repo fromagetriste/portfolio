@@ -2,7 +2,7 @@ import React from "react";
 
 const MyStack = () => {
   return (
-    <section className="section-container">
+    <section className="section-container" id="StackIdForScroll">
       <div className="title">
         My <span id="Stack-Gradient">Tech Stack</span>
       </div>

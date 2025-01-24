@@ -15,7 +15,7 @@ const MyProjects = () => {
   const projectDetails = projectsData[selectedProject - 1];
 
   return (
-    <section className="container-for-margins">
+    <section className="container-for-margins" id="ProjectsIdForScroll">
       <TitleProjects />
       <div className="my-projects-container">
         <div className="left-container">
