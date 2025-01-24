@@ -1,5 +1,6 @@
 import AboutMe from "./components/AboutMe/AboutMe";
 import ContactMe from "./components/ContactMe/ContactMe";
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import MyProjects from "./components/MyProjects/MyProjects";
 import MyStack from "./components/MyStack";
@@ -18,6 +19,7 @@ function App() {
       <MyStack />
       <MyProjects />
       <ContactMe />
+      <Footer />
     </>
   );
 }

@@ -35,6 +35,8 @@
         border-right: solid rgba(255, 255, 255, 0.248) 1px;
         height: 100%;
         width: 100%;
+        transition: transform 0.3s ease;
+
         .logo-react-container {
           height: 11rem;
           width: 11rem;
@@ -50,6 +52,9 @@
             font-size: 1.1rem;
           }
         }
+      }
+      .glass-card-react:hover {
+        transform: skew(3deg, -1deg);
       }
     }
   }
@@ -91,6 +96,10 @@
         font-weight: 900;
         gap: 1rem;
         padding-left: 1rem;
+        transition: transform 0.3s ease;
+      }
+      .glass:hover {
+        transform: skew(-5deg, 2deg);
       }
     }
   }

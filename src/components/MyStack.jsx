@@ -4,7 +4,7 @@ const MyStack = () => {
   return (
     <section className="section-container">
       <div className="title">
-        My <span id="Stack-Gradient">Stack</span>
+        My <span id="Stack-Gradient">Tech Stack</span>
       </div>
       <div className="sub-title">
         I am more focused on React, <br /> but also worked with other tools
@@ -14,7 +14,7 @@ const MyStack = () => {
           <div className="title">Non-React tools :</div>
           <div className="items">
             <div className="gauche-items">
-              <div className="glass python">
+              <div className="glass">
                 <img
                   className="gauche-logo"
                   src="/public/icons/stack/python.svg"

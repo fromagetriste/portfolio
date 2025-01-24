@@ -25,8 +25,8 @@ const projectsData = [
     },
     {
         id: 3,
-        src: "/public/icons/projects/state.svg",
-        srcGreen: "",
+        src: "/public/icons/projects/teddy.svg",
+        srcGreen: "/public/icons/projects/teddy-green.svg",
         framework: "Zustand",
         title: "Countries API",
         description: "A React project consisting of fetching data from a movies API, sorting and filtering data, and rendering it in Card components. Possibility to add Movies to Favorites.",
@@ -38,7 +38,7 @@ const projectsData = [
     {
         id: 4,
         src: "/public/icons/projects/django.svg",
-        srcGreen: "",
+        srcGreen: "/public/icons/projects/django-green.svg",
         framework: "Django",
         title: "Backend Project",
         description: "A project I made a few years ago to solve an actual issue in the company where I worked, to automate a time-consuming task that my colleagues and I had to deal with everyday.",
