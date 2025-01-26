@@ -81,7 +81,7 @@ const MyStack = () => {
               <li className="skill-react">Hooks</li>
               <li className="skill-react">State Management</li>
               <li className="skill-react">API Fetching</li>
-              <li className="skill-react">React Router</li>
+              <li className="skill-react">Data Handling</li>
             </ul>
           </div>
         </div>

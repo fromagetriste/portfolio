@@ -12,10 +12,15 @@ const Navbar = () => {
           <Link to="NavIdForScroll" smooth={true} duration={500}>
             Home
           </Link>
-          <Link to="StackIdForScroll" smooth={true} duration={500}>
+          <Link to="StackIdForScroll" smooth={true} duration={500} offset={-50}>
             Stack
           </Link>
-          <Link to="ProjectsIdForScroll" smooth={true} duration={500}>
+          <Link
+            to="ProjectsIdForScroll"
+            smooth={true}
+            duration={500}
+            offset={-50}
+          >
             Projects
           </Link>
           <Link to="ContactIdForScroll" smooth={true} duration={500}>

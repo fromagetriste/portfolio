@@ -7,23 +7,30 @@ export const cardData = {
   firstCard: {
     firstTitle: "French citizen",
     secondTitle: `${myAge} years old`,
-    image: "",
+    image: "/public/icons/about/france.svg",
   },
   secondCard: {
     firstTitle: "10 years in",
     secondTitle: "International Trade",
-    image: "",
+    image: "/public/icons/about/boat.svg",
   },
   thirdCard: {
     firstTitle: "Loves Tech,",
-    secondTitle: "sports and nature",
-    image: "",
+    secondTitle: "Sports and Nature",
+    image: "/public/icons/about/shoe.svg",
   },
 };
 
 const AboutCard = ({ cardData }) => {
   return (
     <div className="card">
+      <div className="about-logo-container">
+        <img
+          className="about-logo"
+          src={cardData.image}
+          alt={`logo of ${cardData.firstTitle}`}
+        />
+      </div>
       <h4>
         {cardData.firstTitle} <br />
         {cardData.secondTitle}

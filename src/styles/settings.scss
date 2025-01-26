@@ -91,3 +91,13 @@ a {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
+@mixin purple-gradient-properties {
+  background: linear-gradient(0deg, #6724da 40%, #ab8dda 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

@@ -2,14 +2,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   margin: 2rem auto 2rem auto;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 15rem;
   height: 5rem;
   background-color: #141c28;
   text-align: center;
   border-radius: 10px;
   position: relative;
+}
+.about-logo-container {
+  width: 3rem;
+  height: 3rem;
+}
+
+.about-logo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card::after,
@@ -19,7 +30,17 @@
   height: 100%;
   width: 100%;
   background-image: conic-gradient($blue, grey, $blue);
-  background-image: conic-gradient($blue, $blue, $blue, #a600ff, $blue, $blue);
+  // background-image: conic-gradient($blue, $blue, $blue, #a600ff, $blue, $blue);
+  background-image: conic-gradient(
+    #a600ff,
+    #a600ff,
+    #a600ff,
+    $blue,
+    $blue,
+    #a600ff,
+    #a600ff
+  );
+
   top: 50%;
   left: 50%;
   translate: -50% -50%;

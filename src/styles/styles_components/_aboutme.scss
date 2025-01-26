@@ -1,3 +1,19 @@
+.title {
+  text-align: center;
+  font-family: $font-2;
+  font-size: 3.5rem;
+  #about-gradient {
+    @include purple-gradient-properties;
+  }
+}
+.sub-title {
+  color: $grey;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .about-container {
   margin-top: 10rem;
   z-index: -2;
@@ -14,4 +30,13 @@
     align-items: center;
     justify-content: space-between;
   }
+}
+
+.about-description-container {
+  height: 20rem;
+  width: 50rem;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #440ba5;
+  border: grey 3px solid;
 }

@@ -15,8 +15,8 @@ function App() {
       <Navbar />
       <Title />
       <HeroSection />
-      <AboutMe />
       <MyStack />
+      <AboutMe />
       <MyProjects />
       <ContactMe />
       <Footer />
