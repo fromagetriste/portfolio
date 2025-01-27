@@ -7,10 +7,18 @@
   padding: 0.5rem;
   width: 15rem;
   height: 5rem;
-  background-color: #141c28;
   text-align: center;
   border-radius: 10px;
-  position: relative;
+  // background-color: rgb(255, 255, 255, 0.038);
+  // border: 1px solid rgba(255, 255, 255, 0.05);
+  // border-bottom: solid rgba(255, 255, 255, 0.248) 1px;
+  background: rgba(255, 255, 255, 0.03); /* Transparent white */
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2),
+    /* Inner shadow for depth */ 0 4px 10px rgba(0, 0, 0, 0.5); /* Outer shadow for elevation */
+  backdrop-filter: blur(10px); /* Blurred background for glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
 }
 .about-logo-container {
   width: 3rem;
@@ -21,34 +29,4 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
-
-.card::after,
-.card::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: conic-gradient($blue, grey, $blue);
-  // background-image: conic-gradient($blue, $blue, $blue, #a600ff, $blue, $blue);
-  background-image: conic-gradient(
-    #a600ff,
-    #a600ff,
-    #a600ff,
-    $blue,
-    $blue,
-    #a600ff,
-    #a600ff
-  );
-
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -1;
-  padding: 2px;
-  border-radius: 12px;
-}
-.card::before {
-  filter: blur(1.5rem);
-  opacity: 0.4;
 }

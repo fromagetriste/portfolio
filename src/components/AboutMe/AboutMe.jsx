@@ -5,7 +5,7 @@ import AboutDescription from "./AboutDescription";
 
 const AboutMe = () => {
   return (
-    <section className="about-container">
+    <section className="about-container" id="AboutIdForScroll">
       <Title />
       {/* mapping and rendering cards about me : */}
       <div className="cards-container">

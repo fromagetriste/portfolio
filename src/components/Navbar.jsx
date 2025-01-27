@@ -15,6 +15,9 @@ const Navbar = () => {
           <Link to="StackIdForScroll" smooth={true} duration={500} offset={-50}>
             Stack
           </Link>
+          <Link to="AboutIdForScroll" smooth={true} duration={500} offset={-50}>
+            About
+          </Link>
           <Link
             to="ProjectsIdForScroll"
             smooth={true}
