@@ -1,7 +1,6 @@
 import React from "react";
 import Card, { cardData } from "./Card";
 import Title from "./Title";
-import AboutDescription from "./AboutDescription";
 
 const AboutMe = () => {
   return (
@@ -13,7 +12,6 @@ const AboutMe = () => {
           <Card key={key} cardData={cardData[key]} />
         ))}
       </div>
-      <AboutDescription />
     </section>
   );
 };

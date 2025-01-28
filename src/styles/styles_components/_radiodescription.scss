@@ -1,0 +1,81 @@
+.about-me-why-container {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.about-me-why {
+  background-color: #141c28;
+  text-align: center;
+  position: relative;
+  height: 15rem;
+  width: 30rem;
+  border-radius: 10px;
+  padding: 2rem;
+  .about-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .abt-description {
+    text-align: justify;
+  }
+}
+#italic {
+  font-style: italic;
+  color: inherit;
+}
+
+.about-me-why::after,
+.about-me-why::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient($blue, grey, $blue);
+  // background-image: conic-gradient($blue, $blue, $blue, #a600ff, $blue, $blue);
+  background-image: conic-gradient(
+    #a600ff,
+    #a600ff,
+    #a600ff,
+    $blue,
+    $blue,
+    #a600ff,
+    #a600ff
+  );
+
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 2px;
+  border-radius: 12px;
+}
+.about-me-why::before {
+  filter: blur(1.5rem);
+  opacity: 0.4;
+}
+
+// _______________ FLAGS ____________________
+.abt-flags {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 11rem;
+  width: 4rem;
+  border-radius: 10px;
+  //   background-color: #141c28;
+}
+.radio-drapeaux {
+  height: 2rem;
+  width: 3rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.radio-drapeaux:hover {
+  transform: scale(1.1);
+}
