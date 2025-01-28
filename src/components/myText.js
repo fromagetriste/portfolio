@@ -9,7 +9,7 @@ export const myText = {
         title1: "Travailler avec moi au quotidien",
         answer1: `Je suis fiable et toujours prêt à aider. Je n’ai pas peur de livrer du code propre dans des délais serrés, et j’ai déjà travaillé sous pression par le passé. Bien que je puisse travailler de manière autonome, je préfère faire partie d’une équipe. Au travail, je suis dévoué et travailleur, mais j’aime aussi apporter de l’humour à l’équipe.`,
         title2: "Pourquoi le développement web ?",
-        answer2: `J'ai toujours oeuvrer à améliorer les processus, que ce soit par la communication ou avec des outils comme Excel. Avec le temps, je me suis senti limité par Excel, alors j'ai appris Python. Un jour, j'ai dû déployer un programme exécutable, alors je l'ai hébergé avec Django, et je suis tombé amoureux du développement web. J'ai donc appris JS et React. Je dirais que je suis très curieux de la technologie en général, qu'il s'agisse de matériel ou de l'expérience utilisateur.`,
+        answer2: `J'ai toujours oeuvrer à améliorer les processus, que ce soit par la communication ou avec des outils comme Excel. Avec le temps, je me suis senti limité par Excel, alors j'ai appris Python. Un jour, j'ai dû déployer un exécutable, alors je l'ai hébergé avec Django, et je suis tombé amoureux du développement web. J'ai donc appris JS et React. Je dirais que je suis très curieux de la technologie en général, qu'il s'agisse de matériel ou de l'expérience utilisateur.`,
     },
     espanol: {
         title1: "Cómo es trabajar conmigo",

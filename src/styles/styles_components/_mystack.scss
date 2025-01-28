@@ -1,5 +1,5 @@
 .section-container {
-  margin: 10rem 3rem 0 3rem;
+  margin: 20rem 3rem 0 3rem;
   .title {
     text-align: center;
     font-family: $font-2;
@@ -43,6 +43,7 @@
           .card-logo-react {
             height: 100%;
             width: 100%;
+            filter: opacity(0.8);
           }
         }
         .skills-react-container {

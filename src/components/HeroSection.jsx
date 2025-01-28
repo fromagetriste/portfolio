@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 
 const HeroSection = () => {
   const [displayClasses, setDisplayClasses] = useState({
@@ -78,7 +79,9 @@ const HeroSection = () => {
               View my CV
             </button>
             <button id="contact" className="cd-btn">
-              Contact me
+              <Link to="ContactIdForScroll" smooth={true} duration={500}>
+                Contact
+              </Link>
             </button>
           </div>
         </section>
