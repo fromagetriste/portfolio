@@ -7,17 +7,17 @@ export const cardData = {
   firstCard: {
     firstTitle: "French citizen",
     secondTitle: `${myAge} years old`,
-    image: "/public/icons/about/france.svg",
+    image: "/icons/about/france.svg",
   },
   secondCard: {
     firstTitle: "10 years in",
     secondTitle: "International Trade",
-    image: "/public/icons/about/boat.svg",
+    image: "/icons/about/boat.svg",
   },
   thirdCard: {
     firstTitle: "Loves Tech,",
     secondTitle: "Sports and Nature",
-    image: "/public/icons/about/shoe.svg",
+    image: "/icons/about/shoe.svg",
   },
 };
 

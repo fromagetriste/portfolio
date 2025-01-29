@@ -6,7 +6,7 @@ const WhatsApp = () => {
       <div className="photo-container">
         <img
           className="contact-photo"
-          src="/public/icons/contact/whatsapp.svg"
+          src="/icons/contact/whatsapp.svg"
           alt="profile picture"
         />
       </div>

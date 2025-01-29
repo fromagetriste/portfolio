@@ -17,7 +17,7 @@ const ProjectDetails = ({ projectDetails }) => {
           className="anchor-link"
         >
           <img
-            src="/public/icons/projects/monitor.svg"
+            src="/icons/projects/monitor.svg"
             alt="monitor logo"
             className="logo-visit"
           />
@@ -25,7 +25,7 @@ const ProjectDetails = ({ projectDetails }) => {
         </a>
         <a href={projectDetails.github} target="_blank" className="anchor-link">
           <img
-            src="/public/icons/projects/github.svg"
+            src="/icons/projects/github.svg"
             alt="github logo"
             className="logo-visit"
           />

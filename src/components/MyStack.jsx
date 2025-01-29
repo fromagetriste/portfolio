@@ -9,13 +9,15 @@ const MyStack = () => {
       <div className="sub-title">I am more focused on React</div>
       <div className="flex-container">
         <div className="gauche">
-          <div className="title" id="stack-sub-sub">Non-React tools :</div>
+          <div className="title" id="stack-sub-sub">
+            Non-React tools :
+          </div>
           <div className="items">
             <div className="gauche-items">
               <div className="glass">
                 <img
                   className="gauche-logo"
-                  src="/public/icons/stack/python.svg"
+                  src="/icons/stack/python.svg"
                   alt="python logo"
                 />
                 Python
@@ -23,7 +25,7 @@ const MyStack = () => {
               <div className="glass">
                 <img
                   className="gauche-logo"
-                  src="/public/icons/stack/django.svg"
+                  src="/icons/stack/django.svg"
                   alt="django logo"
                 />
                 Django
@@ -31,7 +33,7 @@ const MyStack = () => {
               <div className="glass">
                 <img
                   className="gauche-logo"
-                  src="/public/icons/stack/panda.svg"
+                  src="/icons/stack/panda.svg"
                   alt="panda logo"
                 />
                 Panda
@@ -41,7 +43,7 @@ const MyStack = () => {
               <div className="glass">
                 <img
                   className="gauche-logo"
-                  src="/public/icons/stack/tailwind.svg"
+                  src="/icons/stack/tailwind.svg"
                   alt="sass logo"
                 />
                 Tailwind / SASS
@@ -49,7 +51,7 @@ const MyStack = () => {
               <div className="glass" id="typescript-shadow">
                 <img
                   className="gauche-logo"
-                  src="/public/icons/stack/typescript.svg"
+                  src="/icons/stack/typescript.svg"
                   alt="typescript logo"
                 />
                 TypeScript
@@ -57,7 +59,7 @@ const MyStack = () => {
               <div className="glass">
                 <img
                   className="gauche-logo"
-                  src="/public/icons/stack/github.svg"
+                  src="/icons/stack/github.svg"
                   alt="github logo"
                 />
                 GitHub
@@ -70,7 +72,7 @@ const MyStack = () => {
           <div className="glass-card-react">
             <div className="logo-react-container">
               <img
-                src="/public/icons/stack/react-logo-pink.svg"
+                src="/icons/stack/react-logo-pink.svg"
                 alt="logo react"
                 className="card-logo-react"
               />

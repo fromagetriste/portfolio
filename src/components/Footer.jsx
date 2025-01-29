@@ -8,7 +8,7 @@ const Footer = () => {
         <Link to="NavIdForScroll" smooth={true} duration={500}>
           <img
             className="footer-arrow"
-            src="/public/icons/footer/top-arrow.svg"
+            src="/icons/footer/top-arrow.svg"
             alt="arrow to top page"
           />
         </Link>

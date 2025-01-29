@@ -22,14 +22,14 @@ export const myText = {
 export const flagz = [
     {
         tongue: "english",
-        src: "/public/icons/about/uk.svg",
+        src: "/icons/about/uk.svg",
     },
     {
         tongue: "francais",
-        src: "/public/icons/about/fr.svg",
+        src: "/icons/about/fr.svg",
     },
     {
         tongue: "espanol",
-        src: "/public/icons/about/es.svg",
+        src: "/icons/about/es.svg",
     },
 ];
