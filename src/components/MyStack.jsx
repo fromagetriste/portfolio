@@ -6,9 +6,7 @@ const MyStack = () => {
       <div className="title">
         My <span id="Stack-Gradient">Tech Stack</span>
       </div>
-      <div className="sub-title">
-        I am more focused on React, <br /> but also worked with other tools
-      </div>
+      <div className="sub-title">I am more focused on React</div>
       <div className="flex-container">
         <div className="gauche">
           <div className="title">Non-React tools :</div>

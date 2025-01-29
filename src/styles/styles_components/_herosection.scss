@@ -201,3 +201,23 @@ p {
   filter: blur(80px);
   z-index: 1;
 }
+
+@media (max-width: 480px) {
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 0rem;
+    overflow-x: hidden; // empêcher le scroll horizontal
+    padding: 0;
+    margin: 10rem 0 0 0;
+  }
+
+  .container {
+    z-index: 5;
+    margin: 0 auto;
+    height: 27rem;
+    transform: scale(1);
+    transform: translateY(-3rem);
+  }
+}

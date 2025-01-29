@@ -43,3 +43,20 @@
     }
   }
 }
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 0 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  #nav-home {
+    display: none;
+  }
+  .logo-dev {
+    display: none;
+  }
+  .right-group {
+    display: none !important;
+  }
+}

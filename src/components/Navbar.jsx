@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="left-group">
         <img className="logo-dev" src="/icons/web-icon.svg" alt="dev-icon" />
         <ul className="navigation-sections">
-          <Link to="NavIdForScroll" smooth={true} duration={500}>
+          <Link to="NavIdForScroll" smooth={true} duration={500} id="nav-home">
             Home
           </Link>
           <Link to="StackIdForScroll" smooth={true} duration={500} offset={-50}>

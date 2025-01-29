@@ -23,3 +23,15 @@
   @include blue-gradient-properties;
 }
 
+@media (max-width: 480px) {
+  .title-container {
+    margin-top: 3rem;
+  }
+  .main-title {
+    font-size: 3rem !important;
+    padding: 0 1rem;
+  }
+  .second-title {
+    padding: 0 3rem;
+  }
+}
