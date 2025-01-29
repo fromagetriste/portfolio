@@ -36,8 +36,10 @@ $font-2: "Inter-Black", "Segoe UI", Tahoma;
   color: $white;
 }
 
+html,
 body {
-  overflow-x: hidden; // empêcher le scroll horizontal
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
 }
 
 body {
