@@ -58,25 +58,25 @@ const HeroSection = () => {
 
   const [indexToSwicthToNextClass, setIndexToSwicthToNextClass] = useState(0);
   const [indexForWords, setIndexForWords] = useState(0);
-  const [hasMovedMouse, setHasMovedMouse] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
-    const handleMouseMove = () => {
-      if (!hasMovedMouse) {
-        setHasMovedMouse(true);
+    const handleScroll = () => {
+      if (window.scrollY >= 2 && !hasScrolled) {
+        setHasScrolled(true);
       }
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [hasMovedMouse]);
+  }, [hasScrolled]);
 
   useEffect(() => {
     if (
-      !hasMovedMouse ||
+      !hasScrolled ||
       indexToSwicthToNextClass >= Object.keys(displayClasses).length
     )
       return;
@@ -89,7 +89,7 @@ const HeroSection = () => {
           ...prevState,
           [cssClass]: prevState[cssClass] + cssClass[indexForWords],
         }));
-        setIndexForWords((prev) => prev + 1);
+        setIndexForWords((indexForWords) => indexForWords + 1);
       } else {
         clearInterval(myInterval);
         setIndexToSwicthToNextClass((prev) => prev + 1);
@@ -100,7 +100,7 @@ const HeroSection = () => {
     let myInterval = setInterval(typingCharacters, 100);
 
     return () => clearInterval(myInterval);
-  }, [indexForWords, hasMovedMouse]);
+  }, [indexForWords, hasScrolled]);
 
   return (
     <div className="background">
