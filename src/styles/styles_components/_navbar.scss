@@ -46,15 +46,25 @@
 @media (max-width: 480px) {
   .nav-container {
     padding: 0 1rem;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    .left-group {
+      padding: 0 1rem;
+      justify-content: space-around;
+      .logo-dev {
+        margin: 0;
+        padding-right: 1rem;
+        padding-left: 0;
+      }
+    }
   }
   #nav-home {
     display: none;
   }
   .logo-dev {
-    display: none;
+    // display: none;
   }
   .right-group {
     display: none !important;

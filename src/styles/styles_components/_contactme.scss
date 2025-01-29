@@ -213,3 +213,31 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 480px) {
+  .component-container {
+    margin: 15rem 0 0 0;
+    .title {
+      font-size: 2.5rem;
+    }
+    .sub-title {
+      font-size: 1.25rem;
+      padding: 0 4rem;
+      margin-bottom: 3rem;
+    }
+    .form-container {
+      flex-direction: column;
+      width: 100%;
+      border-radius: 20px;
+      margin: auto;
+      gap: 2rem;
+      height: 100%;
+      .form-card {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+  #contact-shadow::before {
+    transform: translate(0rem, -30rem) rotate(0deg);
+  }
+}

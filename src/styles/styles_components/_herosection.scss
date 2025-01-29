@@ -220,4 +220,9 @@ p {
     transform: scale(1);
     transform: translateY(-3rem);
   }
+  #hero-shadow::before {
+    transform: translate(-9rem, -5rem) rotate(20deg);
+    width: 45rem;
+    height: 4rem;
+  }
 }

@@ -36,9 +36,9 @@ $font-2: "Inter-Black", "Segoe UI", Tahoma;
   color: $white;
 }
 
-// body {
-//   overflow-x: hidden; // empêcher le scroll horizontal
-// }
+body {
+  overflow-x: hidden; // empêcher le scroll horizontal
+}
 
 body {
   font-family: $font-1;

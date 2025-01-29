@@ -1,3 +1,48 @@
+// import React, { useEffect, useState } from "react";
+// import { Link } from "react-scroll";
+
+// const HeroSection = () => {
+//   const [displayClasses, setDisplayClasses] = useState({
+//     aaa: "",
+//     background: "",
+//     "user-friendly": "",
+//     "rounded-pic": "",
+//     FR: "",
+//     "a-b": "", // i need to end my state with a dummy data which i dont use, otherwise the function typingCharacters won't run properly on last object key. To solve the problem, i'd need to modify the function and get into over-complicated logic
+//   });
+
+//   const [indexToSwicthToNextClass, setIndexToSwicthToNextClass] = useState(0);
+//   const [indexForWords, setIndexForWords] = useState(0);
+
+//   useEffect(() => {
+//     if (indexToSwicthToNextClass >= Object.keys(displayClasses).length) return;
+
+//     let cssClass = Object.keys(displayClasses)[indexToSwicthToNextClass];
+//     // console.log(cssClass);
+
+//     function typingCharacters() {
+//       if (indexForWords < cssClass.length) {
+//         setDisplayClasses((prevState) => ({
+//           ...prevState,
+//           [cssClass]: prevState[cssClass] + cssClass[indexForWords],
+//         }));
+//         setIndexForWords((indexForWords) => indexForWords + 1);
+//         // console.log(displayClasses);
+//       } else {
+//         clearInterval(myInterval); // Clear the interval when done
+//         setIndexToSwicthToNextClass(
+//           (indexToSwicthToNextClass) => indexToSwicthToNextClass + 1
+//         );
+//         setIndexForWords(0);
+//       }
+//     }
+//     let myInterval = setInterval(typingCharacters, 100); // starts the interval function
+
+//     return () => {
+//       clearInterval(myInterval); // cleaning function (useEffect property) :
+//     };
+//   }, [indexForWords]); // once this effect changes, useEffect runs again. I first put indexToSwicthToNextClass as dependency array but for some reason i ignore, the output was not what i wanted
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 
@@ -8,17 +53,35 @@ const HeroSection = () => {
     "user-friendly": "",
     "rounded-pic": "",
     FR: "",
-    "a-b": "", // i need to end my state with a dummy data which i dont use, otherwise the function typingCharacters won't run properly on last object key. To solve the problem, i'd need to modify the function and get into over-complicated logic
+    "a-b": "",
   });
 
   const [indexToSwicthToNextClass, setIndexToSwicthToNextClass] = useState(0);
   const [indexForWords, setIndexForWords] = useState(0);
+  const [hasMovedMouse, setHasMovedMouse] = useState(false);
 
   useEffect(() => {
-    if (indexToSwicthToNextClass >= Object.keys(displayClasses).length) return;
+    const handleMouseMove = () => {
+      if (!hasMovedMouse) {
+        setHasMovedMouse(true);
+      }
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [hasMovedMouse]);
+
+  useEffect(() => {
+    if (
+      !hasMovedMouse ||
+      indexToSwicthToNextClass >= Object.keys(displayClasses).length
+    )
+      return;
 
     let cssClass = Object.keys(displayClasses)[indexToSwicthToNextClass];
-    // console.log(cssClass);
 
     function typingCharacters() {
       if (indexForWords < cssClass.length) {
@@ -26,22 +89,18 @@ const HeroSection = () => {
           ...prevState,
           [cssClass]: prevState[cssClass] + cssClass[indexForWords],
         }));
-        setIndexForWords((indexForWords) => indexForWords + 1);
-        // console.log(displayClasses);
+        setIndexForWords((prev) => prev + 1);
       } else {
-        clearInterval(myInterval); // Clear the interval when done
-        setIndexToSwicthToNextClass(
-          (indexToSwicthToNextClass) => indexToSwicthToNextClass + 1
-        );
+        clearInterval(myInterval);
+        setIndexToSwicthToNextClass((prev) => prev + 1);
         setIndexForWords(0);
       }
     }
-    let myInterval = setInterval(typingCharacters, 100); // starts the interval function
 
-    return () => {
-      clearInterval(myInterval); // cleaning function (useEffect property) :
-    };
-  }, [indexForWords]); // once this effect changes, useEffect runs again. I first put indexToSwicthToNextClass as dependency array but for some reason i ignore, the output was not what i wanted
+    let myInterval = setInterval(typingCharacters, 100);
+
+    return () => clearInterval(myInterval);
+  }, [indexForWords, hasMovedMouse]);
 
   return (
     <div className="background">

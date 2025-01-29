@@ -132,12 +132,61 @@
 @media (max-width: 480px) {
   .section-container {
     margin: 10rem 0rem 0 0rem;
+    .title {
+      font-size: 2.5em !important;
+      padding: 0 1rem;
+    }
+    .sub-title {
+      padding: 0 4rem;
+      text-align: center;
+      font-size: 1.25rem !important;
+    }
+    .flex-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3rem;
+      .droite {
+        height: 23rem;
+        width: 90%;
+        margin: auto;
+        .glass-card-react {
+          flex-direction: column;
+          text-align: center;
+          display: block;
+          .logo-react-container {
+            margin: auto;
+            margin-top: 1rem;
+          }
+        }
+      }
+      .gauche {
+        width: 100%;
+        #stack-sub-sub {
+          font-size: 1.5rem !important;
+          margin-top: 2rem;
+        }
+        .items {
+          flex-wrap: wrap;
+          .gauche-items {
+            display: none;
+          }
+          .right-items {
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+            .glass {
+              width: 70%;
+              padding: 0 2rem;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
   }
-  .title {
-    font-size: 3rem;
-  }
-  .sub-title {
-    padding: 0 4rem;
-    text-align: center;
+  #typescript-shadow::before {
+    transform: translate(4rem, -10rem) rotate(0deg);
   }
 }

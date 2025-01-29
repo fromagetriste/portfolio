@@ -9,7 +9,7 @@ const MyStack = () => {
       <div className="sub-title">I am more focused on React</div>
       <div className="flex-container">
         <div className="gauche">
-          <div className="title">Non-React tools :</div>
+          <div className="title" id="stack-sub-sub">Non-React tools :</div>
           <div className="items">
             <div className="gauche-items">
               <div className="glass">
