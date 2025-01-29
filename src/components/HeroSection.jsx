@@ -62,7 +62,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 2 && !hasScrolled) {
+      if (window.scrollY >= 1 && !hasScrolled) {
         setHasScrolled(true);
       }
     };
