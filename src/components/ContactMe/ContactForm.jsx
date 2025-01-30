@@ -19,7 +19,7 @@ export const ContactForm = () => {
         () => {
           form.current.reset();
           toast.success("You received an e-mail confirmation.", {
-            position: "top-center",
+            position: "bottom-center",
             autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -32,7 +32,7 @@ export const ContactForm = () => {
         },
         (error) => {
           toast.error("Failed. Contact me on WhatsApp instead.", {
-            position: "top-center",
+            position: "bottom-center",
             autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,

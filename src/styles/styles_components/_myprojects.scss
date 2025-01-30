@@ -242,9 +242,9 @@
   }
   .container-for-margins #description-container-shadow::after {
     // careful not to over-ride radio buttons
-    transform: translate(3.5rem, -23rem);
-    width: 35rem;
-    height: 10rem;
+    transform: translate(3rem, -23rem) rotate(-13deg);
+    width: 70%;
+    height: 7rem;
     background: radial-gradient(
       50% 20% at 100% 100%,
       #28fa2f 100%,

@@ -190,7 +190,7 @@
   transform: translate(-23rem, -5rem) rotate(0deg);
   width: 23rem;
   height: 8rem;
-  background: radial-gradient(50% 20% at 100% 100%, #da6d24 100%, #da6d24 100%);
+  background: radial-gradient(50% 20% at 100% 100%, #da732f 100%, #da732f 100%);
   filter: blur(120px);
   z-index: -1;
 }
@@ -239,5 +239,6 @@
   }
   #contact-shadow::before {
     transform: translate(0rem, -30rem) rotate(0deg);
+    width: 90vw;
   }
 }

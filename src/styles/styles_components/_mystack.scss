@@ -180,6 +180,8 @@
               padding: 0 2rem;
               align-items: center;
               justify-content: center;
+              border-right: solid rgba(255, 255, 255, 0.248) 1px;
+              border-left: none;
             }
           }
         }
@@ -187,6 +189,7 @@
     }
   }
   #typescript-shadow::before {
-    transform: translate(4rem, -10rem) rotate(0deg);
+    transform: translate(0rem, -10rem) rotate(0deg);
+    width: 98vw;
   }
 }

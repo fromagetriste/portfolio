@@ -78,11 +78,12 @@ const HeroSection = () => {
             <button id="view-cv" className="cd-btn">
               View my CV
             </button>
-            <button id="contact" className="cd-btn">
-              <Link to="ContactIdForScroll" smooth={true} duration={500}>
+
+            <Link to="ContactIdForScroll" smooth={true} duration={500}>
+              <button id="contact" className="cd-btn">
                 Contact
-              </Link>
-            </button>
+              </button>
+            </Link>
           </div>
         </section>
 
