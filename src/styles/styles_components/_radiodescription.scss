@@ -93,12 +93,13 @@
   transition: opacity 0.3s ease;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1250px) {
   .about-me-why-container {
-    width: 100%;
     margin-top: 6rem;
     gap: 1rem;
     flex-direction: column;
+    width: 70%;
+    margin: 6rem auto;
     .about-me-why {
       width: 90%;
       padding: 1rem;
@@ -107,5 +108,11 @@
       flex-direction: row;
       width: 70%;
     }
+  }
+}
+@media (max-width: 650px) {
+  .about-me-why-container {
+    margin-top: 6rem;
+    width: 100%;
   }
 }
