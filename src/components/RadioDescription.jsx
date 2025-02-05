@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { myText, flagz } from "./myText";
+import { motion, AnimatePresence } from "motion/react";
 
 const RadioDescription = () => {
   const [langue, setLangue] = useState("english");
@@ -15,9 +16,35 @@ const RadioDescription = () => {
       <div className="about-me-why-container">
         {/* ____________________________________________ */}
 
-        <div className="about-me-why">
+        {/* <div className="about-me-why">
           <div className="about-title">{myText[langue].title1}</div>
           <p className="abt-description">{myText[langue].answer1}</p>
+        </div> */}
+        <div className="about-me-why">
+          <AnimatePresence mode="wait">
+            <motion.div
+              className="about-title"
+              key={langue} // Forces remount on language change
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              {myText[langue].title1}
+            </motion.div>
+          </AnimatePresence>
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={langue} // Forces remount on language change
+              className="abt-description"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              {myText[langue].answer1}
+            </motion.p>
+          </AnimatePresence>
         </div>
         {/* ____________________________________________ */}
 
@@ -43,8 +70,30 @@ const RadioDescription = () => {
         {/* ____________________________________________ */}
 
         <div className="about-me-why">
-          <div className="about-title">{myText[langue].title2}</div>
-          <p className="abt-description">{myText[langue].answer2}</p>
+          <AnimatePresence mode="wait">
+            <motion.div
+              className="about-title"
+              key={langue} // Forces remount on language change
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              {myText[langue].title2}
+            </motion.div>
+          </AnimatePresence>
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={langue} // Forces remount on language change
+              className="abt-description"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              {myText[langue].answer2}
+            </motion.p>
+          </AnimatePresence>
         </div>
         {/* ____________________________________________ */}
       </div>

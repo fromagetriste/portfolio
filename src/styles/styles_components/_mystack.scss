@@ -148,7 +148,7 @@
       margin-top: 3rem;
       .droite {
         height: 23rem;
-        width: 90%;
+        width: 50%;
         margin: auto;
         .glass-card-react {
           flex-direction: column;
@@ -161,7 +161,7 @@
         }
       }
       .gauche {
-        width: 100%;
+        width: 50%;
         #stack-sub-sub {
           font-size: 1.5rem !important;
           margin-top: 2rem;
@@ -176,7 +176,7 @@
             justify-content: center;
             align-items: center;
             .glass {
-              width: 70%;
+              width: 100%;
               padding: 0 2rem;
               align-items: center;
               justify-content: center;
@@ -192,5 +192,22 @@
     transform: translate(0rem, -10rem) rotate(0deg);
     width: 98vw;
     height: 6rem;
+  }
+}
+@media (max-width: 530px) {
+  .section-container {
+    .flex-container {
+      .droite {
+        width: 90%;
+      }
+      .gauche {
+        width: 90%;
+        .items {
+          .right-items {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
