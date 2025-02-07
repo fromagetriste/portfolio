@@ -4,9 +4,9 @@ import { Link } from "react-scroll";
 const HeroSection = () => {
   const [displayClasses, setDisplayClasses] = useState({
     aaa: "",
+    "user-friendly": "",
     "cd-button": "",
     background: "",
-    "user-friendly": "",
     "rounded-pic": "",
     FR: "",
     "a-b": "", // i need to end my state with a dummy data which i dont use, otherwise the function typingCharacters won't run properly on last object key. To solve the problem, i'd need to modify the function and get into over-complicated logic
@@ -14,8 +14,10 @@ const HeroSection = () => {
 
   const [indexToSwicthToNextClass, setIndexToSwicthToNextClass] = useState(0);
   const [indexForWords, setIndexForWords] = useState(0);
+  const [animationStarted, setAnimationStarted] = useState(false); // Prevents multiple triggers
 
   useEffect(() => {
+    if (!animationStarted) return; // Wait until user interacts
     if (indexToSwicthToNextClass >= Object.keys(displayClasses).length) return;
 
     let cssClass = Object.keys(displayClasses)[indexToSwicthToNextClass];
@@ -42,7 +44,24 @@ const HeroSection = () => {
     return () => {
       clearInterval(myInterval); // cleaning function (useEffect property) :
     };
-  }, [indexForWords]); // once this effect changes, useEffect runs again. I first put indexToSwicthToNextClass as dependency array but for some reason i ignore, the output was not what i wanted
+  }, [indexForWords, animationStarted]); // once this effect changes, useEffect runs again. I first put indexToSwicthToNextClass as dependency array but for some reason i ignore, the output was not what i wanted
+
+  // Function to start animation when user interacts
+  const startAnimation = () => {
+    setAnimationStarted(true); // Allow animation to begin
+    window.removeEventListener("mousemove", startAnimation);
+    window.removeEventListener("touchstart", startAnimation);
+  };
+
+  // Attach event listeners when component mounts
+  useEffect(() => {
+    window.addEventListener("mousemove", startAnimation);
+    window.addEventListener("touchstart", startAnimation);
+    return () => {
+      window.removeEventListener("mousemove", startAnimation);
+      window.removeEventListener("touchstart", startAnimation);
+    };
+  }, []);
 
   return (
     <div className="background">
