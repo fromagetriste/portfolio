@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 const HeroSection = () => {
   const [displayClasses, setDisplayClasses] = useState({
     aaa: "",
+    "cd-button": "",
     background: "",
     "user-friendly": "",
     "rounded-pic": "",
@@ -36,7 +37,7 @@ const HeroSection = () => {
         setIndexForWords(0);
       }
     }
-    let myInterval = setInterval(typingCharacters, 100); // starts the interval function
+    let myInterval = setInterval(typingCharacters, 140); // starts the interval function
 
     return () => {
       clearInterval(myInterval); // cleaning function (useEffect property) :
@@ -75,12 +76,12 @@ const HeroSection = () => {
             interfaces.{" "}
           </p>
           <div className="buttons-container">
-            <button id="view-cv" className="cd-btn">
+            <button id="view-cv" className={displayClasses["cd-button"]}>
               View my CV
             </button>
 
             <Link to="ContactIdForScroll" smooth={true} duration={500}>
-              <button id="contact" className="cd-btn">
+              <button id="contact" className={displayClasses["cd-button"]}>
                 Contact
               </button>
             </Link>
@@ -151,9 +152,9 @@ const HeroSection = () => {
             <span className="grey p-1">{"<"}</span>
             <span className="purple">p</span>
             <span className="grey">{">"}</span>
-            <span className="grey">I am driven by beautiful, </span>
+            <span className="grey">I am driven by beautiful</span>
             <span className="grey">
-              robust and {displayClasses["user-friendly"]} interfaces.
+              , robust and {displayClasses["user-friendly"]} interfaces.
             </span>
             <span className="grey">{"</"}</span>
             <span className="purple">p</span>
@@ -163,7 +164,9 @@ const HeroSection = () => {
             <span className="orange italic"> id=</span>
             <span className="green">"view-cv" </span>
             <span className="orange italic"> class=</span>
-            <span className="green">"cd-btn"</span>
+            <span className="green">"</span>
+            <span className="green">{displayClasses["cd-button"]}</span>
+            <span className="green">"</span>
             <span className="grey">{">"}</span>
             <span className="grey">View my CV</span>
             <span className="grey">{"</"}</span>
@@ -174,7 +177,9 @@ const HeroSection = () => {
             <span className="orange italic"> id=</span>
             <span className="green">"contact" </span>
             <span className="orange italic"> class=</span>
-            <span className="green">"cd-btn"</span>
+            <span className="green">"</span>
+            <span className="green">{displayClasses["cd-button"]}</span>
+            <span className="green">"</span>
             <span className="grey">{">"}</span>
             <span className="grey">Contact Me</span>
             <span className="grey">{"</"}</span>
