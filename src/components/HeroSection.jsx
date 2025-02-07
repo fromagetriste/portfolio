@@ -4,9 +4,9 @@ import { Link } from "react-scroll";
 const HeroSection = () => {
   const [displayClasses, setDisplayClasses] = useState({
     aaa: "",
+    background: "",
     "user-friendly": "",
     "cd-button": "",
-    background: "",
     "rounded-pic": "",
     FR: "",
     "a-b": "", // i need to end my state with a dummy data which i dont use, otherwise the function typingCharacters won't run properly on last object key. To solve the problem, i'd need to modify the function and get into over-complicated logic
