@@ -3,18 +3,18 @@ import { Link } from "react-scroll";
 
 const HeroSection = () => {
   const [displayClasses, setDisplayClasses] = useState({
-    aaa: "",
+    aaa: "", // because useEffect sometimes skipped my first word so i place a dummy and useless word to start, it also creates a delay
     background: "",
-    "user-friendly": "",
-    "cd-button": "",
     "rounded-pic": "",
+    "cd-button": "",
+    "user-friendly": "",
     FR: "",
     "a-b": "", // i need to end my state with a dummy data which i dont use, otherwise the function typingCharacters won't run properly on last object key. To solve the problem, i'd need to modify the function and get into over-complicated logic
   });
 
   const [indexToSwicthToNextClass, setIndexToSwicthToNextClass] = useState(0);
-  const [indexForWords, setIndexForWords] = useState(0);
-  const [animationStarted, setAnimationStarted] = useState(false); // Prevents multiple triggers
+  const [indexForWords, setIndexForWords] = useState(0); // i increment it for each loop
+  const [animationStarted, setAnimationStarted] = useState(false); // Prevents multiple triggers, to start animation only when user interacts
 
   useEffect(() => {
     if (!animationStarted) return; // Wait until user interacts
@@ -39,7 +39,7 @@ const HeroSection = () => {
         setIndexForWords(0);
       }
     }
-    let myInterval = setInterval(typingCharacters, 140); // starts the interval function
+    let myInterval = setInterval(typingCharacters, 120); // starts the interval function
 
     return () => {
       clearInterval(myInterval); // cleaning function (useEffect property) :
